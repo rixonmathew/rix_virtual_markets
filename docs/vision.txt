@@ -1,0 +1,19 @@
+The aim of this project is to make a virtual capital market. The individual participants of the market place will be modelled as independent applications that communicate via messaging. The aim would be to learn the domain of capital markets and also model the technical complexities in a suitable manner. The reference used for modelling all participants is the book Securities Operations by Michael Simmons.
+
+This project will be live on googgle app engine by Sep 8th 2013.
+
+The participants in a virtual market place will be as follows:
+1) Securities Exchange : This entity represents the securities market where participants will place orders and get the market prices.
+2) Securties Trading Organization: This entity represents the firm buying and selling securities. Typically this firm would be a broker
+3) Custodian: This entity represents the Custodian
+4) Regulator: 
+5) Depository and Clearing Corporation
+6) Reference Data provider:
+7) Instituttional clients: 
+8) 
+
+
+Path to reference materials:
+===============================
+a) /media/6AF6FD79F6FD463B/library/from Dinkar/03-Banking & Financial Services/books/Wiley Finance,.Securities Operations - A Guide to Trade and Position Management.[2002.ISBN0471497584].pdf
+b) /media/6AF6FD79F6FD463B/library/from Dinkar/03-Banking & Financial Services/external/securitiestradeprocessing_04.pdf
