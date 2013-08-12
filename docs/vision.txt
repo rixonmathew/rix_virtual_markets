@@ -12,6 +12,20 @@ The participants in a virtual market place will be as follows:
 7) Instituttional clients: 
 8) 
 
+Individual participants of the virtual market will be implemented as an independent web applications. These applications should expose RESTFul Service interfaces that can be called out by the participants to complete the transactions. Better still use MULE as the ESB platform for collaborating. The other option is to use some sort of messaging to collaborate between these two modules. Think which is is more suited for the problem at hand.
+
+Tasks to be done
+
+1) Model the domain of the capital markets
+2) Build functionality for placing order in an Exchange
+3) Get status of the order from exchange
+4) Cancel an order
+5) View order queue
+6) Match orders at exchange based on order attribute
+7) 
+
+Similar to how Concurrency Animated shows the java concurrency as animation model the flow of orders in an animated fashion in the web application. This should serve as both a way to learn the Virtual Capital markets and also to try out that technology. D3 can be used for hi-fi javascript based animation and visualization.
+
 
 Path to reference materials:
 ===============================
