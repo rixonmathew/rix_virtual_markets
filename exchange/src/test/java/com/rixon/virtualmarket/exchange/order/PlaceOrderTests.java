@@ -1,7 +1,5 @@
 package com.rixon.virtualmarket.exchange.order;
 
-import com.rixon.virtualmakret.exchange.factory.ExchangeClientFactory;
-import com.rixon.virtualmarket.exchange.client.ExchangeClient;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertNotNull;
@@ -18,8 +16,8 @@ public class PlaceOrderTests {
     public void testSimpleOrderPlacement() {
        String orderString = mockOrderString();
        //TODO this should be a simple HTTP client based tests.
-       ExchangeClient exchangeClient = ExchangeClientFactory.createExchangeClient();
-       String orderResponse = exchangeClient.placeOrder(orderString);
+       OrderHandler orderHandler = new OrderHandler();
+       String orderResponse = orderHandler.placeOrder(orderString);
        assertNotNull(orderResponse);
     }
 
