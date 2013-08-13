@@ -1,4 +1,4 @@
-package com.rixon.virtualmarket.exchange.order;
+package com.rixon.virtualmarket.exchange.order.handler;
 
 /**
  * This class is responsible for handling the Orders in the exchange
@@ -8,6 +8,6 @@ package com.rixon.virtualmarket.exchange.order;
  */
 public class OrderHandler {
     public String placeOrder(String orderString) {
-        return null;  //TODO provide implementation
+        return "";  //TODO provide implementation
     }
 }
