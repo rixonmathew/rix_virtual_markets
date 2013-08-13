@@ -14,7 +14,7 @@ import java.net.URL;
  */
 public class TestUtil {
 
-    public static String readInputFile(String configurationFileName) {
+    public static String fileContentAsString(String configurationFileName) {
         StringBuilder stringBuilder = new StringBuilder();
         BufferedReader br = null;
         try {
