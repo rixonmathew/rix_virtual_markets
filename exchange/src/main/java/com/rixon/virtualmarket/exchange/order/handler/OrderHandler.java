@@ -1,8 +1,14 @@
 package com.rixon.virtualmarket.exchange.order.handler;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.serializer.NameFilter;
+import com.alibaba.fastjson.serializer.PropertyFilter;
+import com.alibaba.fastjson.serializer.SerializeFilter;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.rixon.virtualmarket.exchange.order.domain.Order;
 import com.rixon.virtualmarket.exchange.order.domain.OrderResponse;
+import com.rixon.virtualmarket.exchange.order.validator.OrderValidator;
+import com.rixon.virtualmarket.exchange.order.validator.OrderValidatorFactory;
 
 /**
  * This class is responsible for handling the Orders in the exchange
@@ -13,30 +19,44 @@ import com.rixon.virtualmarket.exchange.order.domain.OrderResponse;
 public class OrderHandler {
     public String placeOrder(String orderString) {
         Order order = JSON.parseObject(orderString, Order.class);
-        boolean isOrderOK = validateOrder(order);
-        OrderResponse orderResponse = null;
-        if (!isOrderOK) {
-            orderResponse = populateErrorResponse(order);
+        OrderResponse orderResponse = createTemplateResponse(order);
+        validateOrder(order,orderResponse);
+        if (orderResponse.isOrderOK()) {
+            updateResponse(order,orderResponse);
         }
-        orderResponse = createOrder(order);
-        return JSON.toJSONString(orderResponse);
+        return responseAsJSON(orderResponse);
     }
 
-    private boolean validateOrder(Order order) {
-        return true;
+    private OrderResponse createTemplateResponse(Order order) {
+        //TODO think about fields that could be populated from order
+        return new OrderResponse();
     }
 
-    private OrderResponse populateErrorResponse(Order order) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+    private void validateOrder(Order order,OrderResponse orderResponse) {
+        OrderValidator orderValidator = OrderValidatorFactory.validatorForOrder(order);
+        orderValidator.validate(order,orderResponse);
     }
 
-
-    private OrderResponse createOrder(Order order) {
-        //TODO add logic to persist the order in store.
-        OrderResponse orderResponse = new OrderResponse();
+    private void updateResponse(Order order,OrderResponse orderResponse) {
         orderResponse.setStatus("OK");
         orderResponse.setOrderID(order.getOrderID());
-        return orderResponse;
+    }
+
+    private String responseAsJSON(OrderResponse orderResponse){
+        PropertyFilter filter = new PropertyFilter() {
+            public boolean apply(Object source, String name, Object value) {
+                if (name.equals("orderOK")){
+                    return false;
+                }
+                return true;
+            }
+        };
+        SerializerFeature[] features = {SerializerFeature.UseISO8601DateFormat,
+                SerializerFeature.SortField,
+                SerializerFeature.WriteNullListAsEmpty
+        };
+        String response = JSON.toJSONString(orderResponse, filter,features);
+        return response;
     }
 
 }

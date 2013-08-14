@@ -2,7 +2,6 @@
     "orderID":"10101",
     "secondaryOrderID":"11231",
     "tradeOriginationDate":"20130811",
-    "tradeDate":"20130811",
     "account":"1101",
     "accountIDSource":"",
     "accountType":"",
@@ -18,9 +17,8 @@
     "handlingInstitute":"",
     "executingInstitute":"",
     "minimumQuantity":"",
-    "side":"BUY",
-    "orderType":"MARKET",
     "instrument":"GOOG",
-    "transactTime":"20130814101112",
-    "orderQuantity":"200"
+    "side":"BUY",
+    "orderQuantity":"100",
+    "orderType":"LIMIT"
 }

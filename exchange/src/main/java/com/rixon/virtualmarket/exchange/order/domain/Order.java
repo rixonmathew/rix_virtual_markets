@@ -3,8 +3,8 @@ package com.rixon.virtualmarket.exchange.order.domain;
 import java.util.Date;
 
 /**
- * This entity represents the Trade Order domain object. This entity is modelled aroung the NewSingleOrder message as specified
- * by FIX 4.4
+ * This entity represents the Trade Order domain object. This entity is modelled around the
+ * NewSingleOrder message as specified in FIX 4.4
  *
  * User: rixon
  * Date: 13/8/13
@@ -31,7 +31,11 @@ public class Order {
     private String handlingInstitute;
     private String executingInstitute;
     private String minimumQuantity;
-
+    private String instrument;
+    private Side side;
+    private Date transactTime;
+    private String orderQuantity; //TODO This should be a complex type as per FIX specification
+    private OrderType orderType;
 
     public Order() {
     }
@@ -186,5 +190,45 @@ public class Order {
 
     public void setMinimumQuantity(String minimumQuantity) {
         this.minimumQuantity = minimumQuantity;
+    }
+
+    public String getInstrument() {
+        return instrument;
+    }
+
+    public void setInstrument(String instrument) {
+        this.instrument = instrument;
+    }
+
+    public Side getSide() {
+        return side;
+    }
+
+    public void setSide(Side side) {
+        this.side = side;
+    }
+
+    public Date getTransactTime() {
+        return transactTime;
+    }
+
+    public void setTransactTime(Date transactTime) {
+        this.transactTime = transactTime;
+    }
+
+    public String getOrderQuantity() {
+        return orderQuantity;
+    }
+
+    public void setOrderQuantity(String orderQuantity) {
+        this.orderQuantity = orderQuantity;
+    }
+
+    public OrderType getOrderType() {
+        return orderType;
+    }
+
+    public void setOrderType(OrderType orderType) {
+        this.orderType = orderType;
     }
 }

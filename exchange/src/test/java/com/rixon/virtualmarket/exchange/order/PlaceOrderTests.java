@@ -18,20 +18,41 @@ public class PlaceOrderTests {
 
     @Test
     public void testSimpleOrderPlacement() {
-       String expectedResponse = mockResponseString();
-       String orderString = mockOrderString();
-       assertNotNull(orderString);
-       OrderHandler orderHandler = new OrderHandler();
-       String orderResponse = orderHandler.placeOrder(orderString);
-       assertThat(orderResponse,is(expectedResponse));
+        String orderString = mockOrderStringForValidOrder();
+        assertNotNull(orderString);
+        String expectedResponse = mockResponseStringForValidOrder();
+        assertNotNull(expectedResponse);
+        OrderHandler orderHandler = new OrderHandler();
+        String orderResponse = orderHandler.placeOrder(orderString);
+        assertThat(orderResponse, is(expectedResponse));
     }
 
-    private String mockOrderString() {
+    @Test
+    public void testOrderWithoutTransactTimePlacement() {
+        String  orderString = mockOrderStringForInvalidOrder();
+        assertNotNull(orderString);
+        String expectedResponse = mockResponseStringForInvalidOrder();
+        assertNotNull(expectedResponse);
+        OrderHandler orderHandler = new OrderHandler();
+        String orderResponse = orderHandler.placeOrder(orderString);
+        assertThat(orderResponse,is(expectedResponse));
+    }
+
+    private String mockOrderStringForValidOrder() {
         return TestUtil.fileContentAsString("newSingleOrder.json");
     }
 
-    private String mockResponseString() {
+    private String mockResponseStringForValidOrder() {
         return TestUtil.fileContentAsString("newSingleOrder-response.json");
     }
+
+    private String mockOrderStringForInvalidOrder() {
+        return TestUtil.fileContentAsString("newSingleOrderWithoutTransactTime.json");
+    }
+
+    private String mockResponseStringForInvalidOrder() {
+        return TestUtil.fileContentAsString("newSingleOrderWithoutTransactTime-response.json");
+    }
+
 
 }
