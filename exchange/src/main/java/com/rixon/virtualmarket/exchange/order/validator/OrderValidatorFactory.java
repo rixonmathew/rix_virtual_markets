@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public class OrderValidatorFactory {
 
-    private static Map<String,OrderValidator> validatorCache = new HashMap<String, OrderValidator>();
+    private final static Map<String,OrderValidator> validatorCache = new HashMap<String, OrderValidator>();
     private static final String BASIC = "BASIC";
 
     private static void loadCache() {

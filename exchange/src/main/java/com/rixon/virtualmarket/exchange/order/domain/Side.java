@@ -135,7 +135,7 @@ public enum Side {
      */
     BORROW('G');
 
-    private char code;
+    private final char code;
 
     Side(char code){
         this.code = code;

@@ -143,7 +143,7 @@ public enum OrderType {
      */
     STOP_LIMIT_ON_BID_OR_OFFER('S');
 
-    char code;
+    private final char code;
 
     OrderType(char code) {
         this.code = code;

@@ -16,9 +16,10 @@ public class TestUtil {
 
     public static String fileContentAsString(String configurationFileName) {
         StringBuilder stringBuilder = new StringBuilder();
-        BufferedReader br = null;
+
         try {
-            br = new BufferedReader(new FileReader(getFullPathForFile(configurationFileName)));
+
+            BufferedReader br = new BufferedReader(new FileReader(getFullPathForFile(configurationFileName)));
             String line = br.readLine();
             stringBuilder.append(line);
             while (line != null) {
@@ -28,9 +29,9 @@ public class TestUtil {
             }
             br.close();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
 
         return stringBuilder.toString();

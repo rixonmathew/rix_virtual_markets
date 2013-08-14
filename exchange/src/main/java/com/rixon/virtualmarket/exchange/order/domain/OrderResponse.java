@@ -3,7 +3,8 @@ package com.rixon.virtualmarket.exchange.order.domain;
 import java.util.List;
 
 /**
- * //TODO : Add File information
+ * This file represents the response to be sent after Order has been placed
+ *
  * User: rixon
  * Date: 13/8/13
  * Time: 5:35 PM

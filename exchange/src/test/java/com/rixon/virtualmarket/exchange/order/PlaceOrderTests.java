@@ -9,7 +9,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
- * This file is used for testing the functionality of placing Orders in the exchnage
+ * This file is used for testing the functionality of placing Orders in the exchange
  * User: rixon
  * Date: 13/8/13
  * Time: 12:52 PM

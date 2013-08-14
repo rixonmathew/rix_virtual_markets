@@ -55,8 +55,7 @@ public class OrderHandler {
                 SerializerFeature.SortField,
                 SerializerFeature.WriteNullListAsEmpty
         };
-        String response = JSON.toJSONString(orderResponse, filter,features);
-        return response;
+        return JSON.toJSONString(orderResponse, filter,features);
     }
 
 }

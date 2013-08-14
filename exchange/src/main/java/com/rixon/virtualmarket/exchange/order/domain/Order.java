@@ -19,7 +19,7 @@ public class Order {
     private String account;
     private String accountIDSource;
     private String accountType;
-    private String dayBookingInstitue;
+    private String dayBookingInstitute;
     private String bookingUnit;
     private String preallocationMethod;
     private String allocationId;
@@ -96,12 +96,12 @@ public class Order {
         this.accountType = accountType;
     }
 
-    public String getDayBookingInstitue() {
-        return dayBookingInstitue;
+    public String getDayBookingInstitute() {
+        return dayBookingInstitute;
     }
 
-    public void setDayBookingInstitue(String dayBookingInstitue) {
-        this.dayBookingInstitue = dayBookingInstitue;
+    public void setDayBookingInstitute(String dayBookingInstitute) {
+        this.dayBookingInstitute = dayBookingInstitute;
     }
 
     public String getBookingUnit() {

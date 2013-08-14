@@ -4,13 +4,14 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.PropertyFilter;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.rixon.virtualmarket.exchange.order.domain.OrderResponse;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This class is used for testing the JSON configuration
+ * This class is used for testing the JSON configuration using filters and SerializerFeatures
  * User: rixon
  * Date: 14/8/13
  * Time: 1:45 PM
@@ -18,6 +19,7 @@ import java.util.List;
 public class FastJSONTest {
 
     @Test
+    @Ignore
     public void testJSONStringFunctionality(){
         OrderResponse orderResponse = createMockResponse();
         String response = JSON.toJSONString(orderResponse,true);
@@ -36,6 +38,7 @@ public class FastJSONTest {
     }
 
     @Test
+    @Ignore
     public void testJSONStringFunctionalityWithFeatures() {
         SerializerFeature[] features = {SerializerFeature.UseISO8601DateFormat,SerializerFeature.SkipTransientField};
         OrderResponse orderResponse = createMockResponse();
@@ -44,14 +47,12 @@ public class FastJSONTest {
     }
 
 
-     @Test
+    @Test
+    @Ignore
     public void testJSONStringFunctionalityWithFilters() {
          PropertyFilter filter = new PropertyFilter() {
              public boolean apply(Object source, String name, Object value) {
-                 if (name.equals("errorMessages")||name.equals("orderOK")){
-                     return false;
-                 }
-                 return true;
+                 return !(name.equals("errorMessages") || name.equals("orderOK"));
              }
          };
          OrderResponse orderResponse = createMockResponse();
