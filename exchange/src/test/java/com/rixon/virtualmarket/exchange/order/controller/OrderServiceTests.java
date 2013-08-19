@@ -12,10 +12,11 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
- * This class is used for testing the RESTFul Services exposed by exchange. The tests should be commented when
- * being run via maven. This can be used after deploying the tests to Tomcat to see if the order is correct or not
+ * This class is used for testing the RESTFul Services exposed by exchange. These are online tests and The tests should
+ * be commented when being run via maven. This can be used after deploying the tests to Tomcat to see if the order
+ * is correct or not
  *
- *  User: rixon
+ * User: rixon
  * Date: 14/8/13
  * Time: 2:37 PM
  */
@@ -35,9 +36,9 @@ public class OrderServiceTests {
     @Test
     @Ignore
     public void testGetOrderById() {
-        String orderURL = "http://localhost:8080/exchange/order";
-        OrderResponse actualOrderResponse = new RestTemplate().getForObject(orderURL,OrderResponse.class);
-        System.out.println("actualOrderResponse = " + actualOrderResponse);
+        String orderURL = "http://localhost:8080/exchange/order/{id}";
+        Order order = new RestTemplate().getForObject(orderURL,Order.class,"10101");
+        System.out.println("actualOrderResponse = " + order);
     }
 
 }

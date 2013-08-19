@@ -8,10 +8,7 @@ import com.rixon.virtualmarket.exchange.order.domain.OrderResponse;
 import com.rixon.virtualmarket.exchange.order.handler.OrderHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * This class represents the controllers for handling requests related to Orders
@@ -19,7 +16,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * Date: 19/8/13
  * Time: 1:44 PM
  */
-@Controller(value="/order")
+@Controller
+@RequestMapping("/order")
 public class OrderController {
 
     @Autowired
@@ -31,15 +29,11 @@ public class OrderController {
         return orderHandler.placeOrder(order);
     }
 
-    //TODO This is for testing connectivity remove after testing
-    @RequestMapping(method = RequestMethod.GET,
+    @RequestMapping(value = "/{id}",
+                    method = RequestMethod.GET,
                     headers = {"Accept=application/xml,application/json"})
-    public @ResponseBody OrderResponse get() {
-        OrderResponse response = new OrderResponse();
-        response.setStatus("OK");
-        response.setOrderID("10101");
-        return response;
-
+    public @ResponseBody Order get(@PathVariable String id) {
+        return orderHandler.getOrderForId(id);
     }
 
     private String responseAsJSON(OrderResponse orderResponse){

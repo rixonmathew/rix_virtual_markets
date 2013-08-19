@@ -1,4 +1,4 @@
-package com.rixon.virtualmarket.exchange.order;
+package com.rixon.virtualmarket.exchange.order.handler;
 
 import com.alibaba.fastjson.JSON;
 import com.rixon.virtualmarket.exchange.order.domain.Order;

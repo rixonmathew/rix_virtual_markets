@@ -1,8 +1,8 @@
 {
     "orderID":"10101",
     "secondaryOrderID":"11231",
-    "tradeOriginationDate":"20130811",
-    "tradeDate":"20130811",
+    "tradeOriginationDate":"2013-08-11",
+    "tradeDate":"2013-08-11",
     "account":"1101",
     "accountIDSource":"",
     "accountType":"",
@@ -21,6 +21,6 @@
     "side":"BUY",
     "orderType":"MARKET",
     "instrument":"GOOG",
-    "transactTime":"20130814101112",
+    "transactTime":"2013-08-14T10:11:12",
     "orderQuantity":"200"
 }

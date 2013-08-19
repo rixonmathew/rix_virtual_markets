@@ -6,6 +6,11 @@ import com.rixon.virtualmarket.exchange.order.validator.OrderValidator;
 import com.rixon.virtualmarket.exchange.order.validator.OrderValidatorFactory;
 import org.springframework.stereotype.Service;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 /**
  * This class is responsible for handling the Orders in the exchange
  * User: rixon
@@ -41,5 +46,17 @@ public class OrderHandler {
     private void updateResponse(Order order,OrderResponse orderResponse) {
         orderResponse.setStatus("OK");
         orderResponse.setOrderID(order.getOrderID());
+    }
+
+    public Order getOrderForId(String orderId) {
+        Order order = new Order();
+        order.setOrderID(orderId);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
+        try {
+            order.setTradeDate(dateFormat.parse("20130811"));
+        } catch (ParseException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+        return order;
     }
 }
