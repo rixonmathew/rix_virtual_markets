@@ -8,10 +8,7 @@ import com.rixon.virtualmarket.exchange.order.domain.OrderResponse;
 import com.rixon.virtualmarket.exchange.order.handler.OrderHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * This class represents the controllers for handling requests related to Orders
@@ -26,8 +23,8 @@ public class OrderController {
     private OrderHandler orderHandler;
 
     @RequestMapping(method = RequestMethod.POST,
-                    headers = {"Accept=application/xml,application/json"})
-    public @ResponseBody OrderResponse handleOrder(@PathVariable Order order) {
+                    headers = {"Content-Type=application/json"})
+    public @ResponseBody OrderResponse handleOrder(@RequestBody Order order) {
         return orderHandler.placeOrder(order);
     }
 
