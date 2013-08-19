@@ -5,9 +5,8 @@ import com.rixon.virtualmarket.exchange.order.domain.Order;
 import com.rixon.virtualmarket.exchange.order.domain.OrderResponse;
 import com.rixon.virtualmarket.util.TestUtil;
 import org.junit.Ignore;
-import org.springframework.web.client.RestTemplate;
-
 import org.junit.Test;
+import org.springframework.web.client.RestTemplate;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -27,7 +26,6 @@ public class OrderServiceTests {
     public void testRestfulServiceForValidOrder() {
         String orderURL = "http://localhost:8080/exchange/order";
         Order mockOrder = JSON.parseObject(TestUtil.fileContentAsString("newSingleOrder.json"),Order.class);
-        //place order and validate response
         OrderResponse expectedOrderResponse = JSON.parseObject(TestUtil.fileContentAsString("newSingleOrder-response.json"),OrderResponse.class);
         OrderResponse actualOrderResponse = new RestTemplate().postForObject(orderURL,mockOrder,OrderResponse.class);
         //assert Response
