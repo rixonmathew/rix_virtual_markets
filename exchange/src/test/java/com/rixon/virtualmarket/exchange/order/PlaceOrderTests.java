@@ -1,5 +1,8 @@
 package com.rixon.virtualmarket.exchange.order;
 
+import com.alibaba.fastjson.JSON;
+import com.rixon.virtualmarket.exchange.order.domain.Order;
+import com.rixon.virtualmarket.exchange.order.domain.OrderResponse;
 import com.rixon.virtualmarket.exchange.order.handler.OrderHandler;
 import com.rixon.virtualmarket.util.TestUtil;
 import org.junit.Test;
@@ -18,40 +21,41 @@ public class PlaceOrderTests {
 
     @Test
     public void testSimpleOrderPlacement() {
-        String orderString = mockOrderStringForValidOrder();
-        assertNotNull(orderString);
-        String expectedResponse = mockResponseStringForValidOrder();
+        Order order = mockOrderForValidOrder();
+        assertNotNull(order);
+        OrderResponse expectedResponse = mockResponseForValidOrder();
         assertNotNull(expectedResponse);
         OrderHandler orderHandler = new OrderHandler();
-        String orderResponse = orderHandler.placeOrder(orderString);
+        OrderResponse orderResponse = orderHandler.placeOrder(order);
         assertThat(orderResponse, is(expectedResponse));
     }
 
     @Test
     public void testOrderWithoutTransactTimePlacement() {
-        String  orderString = mockOrderStringForInvalidOrder();
-        assertNotNull(orderString);
-        String expectedResponse = mockResponseStringForInvalidOrder();
+        Order order = mockOrderForInvalidOrder();
+        assertNotNull(order);
+        OrderResponse expectedResponse = mockResponseForInvalidOrder();
         assertNotNull(expectedResponse);
         OrderHandler orderHandler = new OrderHandler();
-        String orderResponse = orderHandler.placeOrder(orderString);
+        OrderResponse orderResponse = orderHandler.placeOrder(order);
         assertThat(orderResponse,is(expectedResponse));
     }
 
-    private String mockOrderStringForValidOrder() {
-        return TestUtil.fileContentAsString("newSingleOrder.json");
+    private Order mockOrderForValidOrder() {
+        return JSON.parseObject(TestUtil.fileContentAsString("newSingleOrder.json"),Order.class);
     }
 
-    private String mockResponseStringForValidOrder() {
-        return TestUtil.fileContentAsString("newSingleOrder-response.json");
+    private OrderResponse mockResponseForValidOrder() {
+        return JSON.parseObject(TestUtil.fileContentAsString("newSingleOrder-response.json"), OrderResponse.class);
     }
 
-    private String mockOrderStringForInvalidOrder() {
-        return TestUtil.fileContentAsString("newSingleOrderWithoutTransactTime.json");
+    private Order mockOrderForInvalidOrder() {
+        return JSON.parseObject(TestUtil.fileContentAsString("newSingleOrderWithoutTransactTime.json"), Order.class);
     }
 
-    private String mockResponseStringForInvalidOrder() {
-        return TestUtil.fileContentAsString("newSingleOrderWithoutTransactTime-response.json");
+    private OrderResponse mockResponseForInvalidOrder() {
+        return JSON.parseObject(TestUtil.fileContentAsString("newSingleOrderWithoutTransactTime-response.json"),
+                OrderResponse.class);
     }
 
 

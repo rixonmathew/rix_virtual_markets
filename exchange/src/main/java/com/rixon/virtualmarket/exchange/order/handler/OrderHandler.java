@@ -9,6 +9,7 @@ import com.rixon.virtualmarket.exchange.order.domain.Order;
 import com.rixon.virtualmarket.exchange.order.domain.OrderResponse;
 import com.rixon.virtualmarket.exchange.order.validator.OrderValidator;
 import com.rixon.virtualmarket.exchange.order.validator.OrderValidatorFactory;
+import org.springframework.stereotype.Service;
 
 /**
  * This class is responsible for handling the Orders in the exchange
@@ -16,15 +17,20 @@ import com.rixon.virtualmarket.exchange.order.validator.OrderValidatorFactory;
  * Date: 13/8/13
  * Time: 2:42 PM
  */
+@Service
 public class OrderHandler {
-    public String placeOrder(String orderString) {
-        Order order = JSON.parseObject(orderString, Order.class);
+
+    public OrderResponse placeOrder(Order order) {
         OrderResponse orderResponse = createTemplateResponse(order);
         validateOrder(order,orderResponse);
-        if (orderResponse.isOrderOK()) {
+        if (isOrderOK(orderResponse)) {
             updateResponse(order,orderResponse);
         }
-        return responseAsJSON(orderResponse);
+        return orderResponse;
+    }
+
+    private boolean isOrderOK(OrderResponse orderResponse) {
+        return orderResponse.getStatus().equals("OK");
     }
 
     private OrderResponse createTemplateResponse(Order order) {
@@ -41,21 +47,4 @@ public class OrderHandler {
         orderResponse.setStatus("OK");
         orderResponse.setOrderID(order.getOrderID());
     }
-
-    private String responseAsJSON(OrderResponse orderResponse){
-        PropertyFilter filter = new PropertyFilter() {
-            public boolean apply(Object source, String name, Object value) {
-                if (name.equals("orderOK")){
-                    return false;
-                }
-                return true;
-            }
-        };
-        SerializerFeature[] features = {SerializerFeature.UseISO8601DateFormat,
-                SerializerFeature.SortField,
-                SerializerFeature.WriteNullListAsEmpty
-        };
-        return JSON.toJSONString(orderResponse, filter,features);
-    }
-
 }
