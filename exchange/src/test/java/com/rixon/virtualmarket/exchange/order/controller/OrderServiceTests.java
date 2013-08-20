@@ -29,7 +29,6 @@ public class OrderServiceTests {
         Order mockOrder = JSON.parseObject(TestUtil.fileContentAsString("newSingleOrder.json"),Order.class);
         OrderResponse expectedOrderResponse = JSON.parseObject(TestUtil.fileContentAsString("newSingleOrder-response.json"),OrderResponse.class);
         OrderResponse actualOrderResponse = new RestTemplate().postForObject(orderURL,mockOrder,OrderResponse.class);
-        //assert Response
         assertThat("OrderResponse is not matching",expectedOrderResponse,is(actualOrderResponse));
     }
 
@@ -40,5 +39,4 @@ public class OrderServiceTests {
         Order order = new RestTemplate().getForObject(orderURL,Order.class,"10101");
         System.out.println("actualOrderResponse = " + order);
     }
-
 }

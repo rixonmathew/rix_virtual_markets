@@ -51,6 +51,4 @@ public class OrderController {
         };
         return JSON.toJSONString(orderResponse, filter, features);
     }
-
-
 }
