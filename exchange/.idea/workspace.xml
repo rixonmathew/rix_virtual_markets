@@ -1,97 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12723a5f-dfcd-4d64-a80c-b3b006429812" name="Default" comment="">
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/messaging/MessageBasedOrderingTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/messaging/MessageBasedOrderingTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/controller/OrderRESTInterfacesTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/controller/OrderRESTInterfacesTests.java" />
+    <list default="true" id="1be2acc4-5af1-4a47-bc22-7e61c46d330e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exchange.iml" afterPath="$PROJECT_DIR$/exchange.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/rabbit/rabbit-sender-context.xml" afterPath="$PROJECT_DIR$/src/test/resources/rabbit/rabbit-sender-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="exchange.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1400027007304" ignored="false" />
-    <file path="/fragment.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383494669820" ignored="false" />
-    <file path="/MessageBasedOrderingTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1387811793972" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/wgjd_practice/src/com/rixon/tryouts/SwitchTryouts.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1378646008265" ignored="false" />
-    <file path="/SwitchTryouts.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1378646005787" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/wgjd_practice/.idea/workspace.xml" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1378652057500" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/wgjd_practice/src/com/rixon/tryouts/NIOTryouts.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1378652046513" ignored="false" />
-    <file path="/NIOTryouts.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1378652012561" ignored="false" />
-    <file path="/OrderHandler.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1382844895399" ignored="false" />
-    <file path="/OrderMessageListener.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383488650538" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/twitterapi_tryouts/src/test/java/com/rixon/twitterapi/authentication/AuthenticationVerifier.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383552214165" ignored="false" />
-    <file path="/AuthenticationVerifier.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383550595655" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/twitterapi_tryouts/pom.xml" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383556936614" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/twitterapi_tryouts/src/main/resources/tokens.properties" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383556901476" ignored="false" />
-    <file path="/pom.xml" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383546986077" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/twitterapi_tryouts/src/main/java/com/rixon/twitterapi/configuration/TwiiterConnectionConfiguration.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383498678335" ignored="false" />
-    <file path="/TwiiterConnectionConfiguration.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383498678335" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/twitterapi_tryouts/src/main/java/com/rixon/twitterapi/controller/ConnectController.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383494735446" ignored="false" />
-    <file path="/ConnectController.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383494734631" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/twitterapi_tryouts/src/main/resources/templates/connect/twitterConnect.html" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383497955909" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/twitterapi_tryouts/src/main/resources/templates/connect/twitterConnected.html" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383497987479" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/twitterapi_tryouts/src/main/java/com/rixon/twitterapi/controller/TwitterController.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383557375608" ignored="false" />
-    <file path="/TwitterController.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383554051766" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/twitterapi_tryouts/src/main/resources/hello.html" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383498511665" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/twitterapi_tryouts/src/main/java/com/rixon/twitterapi/Application.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383498750824" ignored="false" />
-    <file path="/Application.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383498750360" ignored="false" />
-    <file path="/a.dummy" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383498659085" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/twitterapi_tryouts/src/main/java/com/rixon/twitterapi/configuration/TwitterConnectionConfiguration.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383501138034" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/twitterapi_tryouts/src/main/resources/templates/hello.html" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383557112420" ignored="false" />
-    <file path="/hello.html" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383557110492" ignored="false" />
-    <file path="/tokens.properties" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1383548002181" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/wgjd_practice/src/com/rixon/tryouts/CollectionsPerformance.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1385224847625" ignored="false" />
-    <file path="/CollectionsPerformance.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1385224761973" ignored="false" />
-    <file path="/rabbit-sender-context.xml" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1387811351768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/PhasedBackoffWaitStrategyTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142441" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/LifecycleAwareTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142441" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/support/StubEvent.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142441" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/ShutdownOnFatalExceptionTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/SequenceUpdater.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/SequenceGroupTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/TimeoutBlockingWaitStrategyTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/RingBufferTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/FatalExceptionHandlerTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/WaitStrategyTestUtil.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/MultiProducerSequencerTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/BusySpinWaitStrategyTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/SequencerTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/FixedSequenceGroupTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/DummySequenceBarrier.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/SequenceBarrierTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/EventTranslatorTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/main/java/com/lmax/disruptor/BatchEventProcessor.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/YieldingWaitStrategyTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/SequenceReportingCallbackTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/IgnoreExceptionHandlerTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/AggregateEventHandlerTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/SleepingWaitStrategyTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/RingBufferWithMocksTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/TortureTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142442" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/WorkerPoolTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142443" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_lmax/disruptor/src/test/java/com/lmax/disruptor/EventPublisherTest.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1390745142443" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/main/MockGenerationClient.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1391871329415" ignored="false" />
-    <file path="/MockGenerationClient.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1391871323776" ignored="false" />
-    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/RandomFileGenerationStrategy.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1391874913452" ignored="false" />
-    <file path="/RandomFileGenerationStrategy.java" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1391874882560" ignored="false" />
-=======
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="" />
-    </list>
-    <ignored path="exchange.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1378131757502" ignored="false" />
->>>>>>> parent of 2b402ca... minor changes
-=======
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="" />
-    </list>
-    <ignored path="exchange.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="12723a5f-dfcd-4d64-a80c-b3b006429812" time="1378131757502" ignored="false" />
->>>>>>> parent of 2b402ca... minor changes
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/resources/mongoConfiguration.xml" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/messaging/MessageBasedOrderingTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/resources/applicationContext.xml" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/resources/rabbit/rabbit-listener-context.xml" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/Side.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/Order.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/OrderType.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/OrderResponse.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/handler/OrderHandler.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/resources/rabbit/rabbit-sender-context.xml" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/controller/OrderController.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
+    <file path="/Dummy.txt" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033282652" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,150 +71,13 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/messaging/MessageBasedOrderingTest.java" line="56" class="com.rixon.virtualmarket.exchange.order.messaging.MessageBasedOrderingTest" package="com.rixon.virtualmarket.exchange.order.messaging">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
-=======
->>>>>>> parent of 2b402ca... minor changes
-=======
->>>>>>> parent of 2b402ca... minor changes
     <breakpoint_rules />
     <ui_properties />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="exchange" />
-  </component>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/controller/OrderController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="36" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderRESTInterfacesTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/controller/OrderRESTInterfacesTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="28" selection-start="1531" selection-end="1555" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/repository/OrderRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="17" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/Order.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="439" selection-end="439" vertical-scroll-proportion="0.27752808">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderResponse.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/OrderResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/OrderType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="12" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Side.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/Side.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="12" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/handler/OrderHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="26" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-=======
->>>>>>> parent of 2b402ca... minor changes
-=======
->>>>>>> parent of 2b402ca... minor changes
-  <component name="FindManager">
-    <FindUsagesManager>
-      <setting name="OPEN_NEW_TAB" value="false" />
-    </FindUsagesManager>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -295,110 +87,9 @@
       <MyDateState />
     </option>
   </component>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <component name="IdeDocumentHistory">
-    <option name="changedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/handler/OrderHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/messaging/OrderMessageListener.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/rabbit/rabbit-sender-context.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/messaging/MessageBasedOrderingTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/controller/OrderRESTInterfacesTests.java" />
-      </list>
-    </option>
-  </component>
-=======
->>>>>>> parent of 2b402ca... minor changes
-=======
->>>>>>> parent of 2b402ca... minor changes
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="exchange" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="exchange" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
-  </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="2560" />
     <option name="height" value="1440" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Code maturity issues</id>
-          </State>
-          <State>
-            <id>General</id>
-          </State>
-          <State>
-            <id>Google Web Toolkit issues</id>
-          </State>
-          <State>
-            <id>Java language level migration aids</id>
-          </State>
-          <State>
-            <id>Javadoc issues</id>
-          </State>
-          <State>
-            <id>Performance issues</id>
-          </State>
-          <State>
-            <id>Spring Model</id>
-          </State>
-          <State>
-            <id>TestNG</id>
-          </State>
-          <State>
-            <id>Threading issues</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Abstraction issues</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -413,11 +104,6 @@
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
-  <component name="ProjectStructureProblems">
-    <ignored-problems>
-      <problem id="invalid-module-dependency(module:exchange,&lt; 1.7 &gt;)" />
-    </ignored-problems>
-  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -431,7 +117,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -451,386 +136,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-=======
->>>>>>> parent of 2b402ca... minor changes
-=======
->>>>>>> parent of 2b402ca... minor changes
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="MavenSettings" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
-<<<<<<< HEAD
-<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-=======
-    <property name="project.structure.side.proportion" value="0.0" />
->>>>>>> parent of 2b402ca... minor changes
-=======
-    <property name="project.structure.side.proportion" value="0.0" />
->>>>>>> parent of 2b402ca... minor changes
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <component name="RestClientSettings">
-    <option name="LAST_HOST" value="http://localhost:8080/exchange/order/000083656" />
-  </component>
-  <component name="RunManager" selected="JUnit.OrderRESTInterfacesTests.testGetOperationForOrder">
-=======
-  <component name="RunManager" selected="JUnit.All in exchange">
->>>>>>> parent of 2b402ca... minor changes
-=======
-  <component name="RunManager" selected="JUnit.All in exchange">
->>>>>>> parent of 2b402ca... minor changes
-    <configuration default="false" name="All in exchange" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="exchange" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <configuration default="false" name="OrderRESTInterfacesTests" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.rixon.virtualmarket.exchange.order.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="exchange" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.rixon.virtualmarket.exchange.order.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.rixon.virtualmarket.exchange.order.controller.OrderRESTInterfacesTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MessageBasedOrderingTest.testSimpleOrderOverMessage" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.rixon.virtualmarket.exchange.order.messaging.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="exchange" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.rixon.virtualmarket.exchange.order.messaging" />
-      <option name="MAIN_CLASS_NAME" value="com.rixon.virtualmarket.exchange.order.messaging.MessageBasedOrderingTest" />
-      <option name="METHOD_NAME" value="testSimpleOrderOverMessage" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Profile ">
-        <option name="myExternalizedOptions" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Profile " />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MessageBasedOrderingTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.rixon.virtualmarket.exchange.order.messaging.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="exchange" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.rixon.virtualmarket.exchange.order.messaging" />
-      <option name="MAIN_CLASS_NAME" value="com.rixon.virtualmarket.exchange.order.messaging.MessageBasedOrderingTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="OrderRESTInterfacesTests.testGetOperationForOrder" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.rixon.virtualmarket.exchange.order.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="exchange" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.rixon.virtualmarket.exchange.order.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.rixon.virtualmarket.exchange.order.controller.OrderRESTInterfacesTests" />
-      <option name="METHOD_NAME" value="testGetOperationForOrder" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-=======
->>>>>>> parent of 2b402ca... minor changes
-=======
->>>>>>> parent of 2b402ca... minor changes
+  <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list />
-            </option>
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -918,39 +248,7 @@
       <patterns />
       <method />
     </configuration>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.All in exchange" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.OrderRESTInterfacesTests" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MessageBasedOrderingTest.testSimpleOrderOverMessage" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MessageBasedOrderingTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.OrderRESTInterfacesTests.testGetOperationForOrder" />
-    </list>
-    <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.OrderRESTInterfacesTests.testGetOperationForOrder" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MessageBasedOrderingTest.testSimpleOrderOverMessage" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MessageBasedOrderingTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.OrderRESTInterfacesTests" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.All in exchange" />
-=======
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.All in exchange" />
-=======
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.All in exchange" />
->>>>>>> parent of 2b402ca... minor changes
-    </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in exchange" />
-<<<<<<< HEAD
->>>>>>> parent of 2b402ca... minor changes
-=======
->>>>>>> parent of 2b402ca... minor changes
-      </list>
-    </recent_temporary>
+    <list size="0" />
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -972,14 +270,13 @@
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
     <option name="IGNORE_EXTERNALS" value="false" />
-    <configuration useDefault="true">$USER_HOME$/.subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="12723a5f-dfcd-4d64-a80c-b3b006429812" name="Default" comment="" />
-      <created>1378131730333</created>
-      <updated>1378131730333</updated>
+      <changelist id="1be2acc4-5af1-4a47-bc22-7e61c46d330e" name="Default" comment="" />
+      <created>1400033263836</created>
+      <updated>1400033263836</updated>
     </task>
     <servers />
   </component>
@@ -987,37 +284,6 @@
     <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
     <editor active="false" />
     <layout>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39940387" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975337" sideWeight="0.6706408" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2453125" sideWeight="0.670812" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="100" y="100" width="2360" height="1240" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-=======
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1030,7 +296,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1038,39 +303,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980111" sideWeight="0.6706408" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32935917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
->>>>>>> parent of 2b402ca... minor changes
-=======
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980111" sideWeight="0.6706408" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32935917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
->>>>>>> parent of 2b402ca... minor changes
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -1134,226 +371,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/rabbit/rabbit-sender-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="28" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/messaging/OrderMessageListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="31" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mongoConfiguration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/rabbit/rabbit-listener-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.18769716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/messaging/MessageBasedOrderingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="108" selection-start="3646" selection-end="3646" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/controller/OrderRESTInterfacesTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="28" selection-start="1531" selection-end="1555" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/repository/OrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/handler/OrderHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="36" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/OrderResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/OrderType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/Side.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="12" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="439" selection-end="439" vertical-scroll-proportion="0.27752808">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-  </component>
-=======
->>>>>>> parent of 2b402ca... minor changes
-=======
->>>>>>> parent of 2b402ca... minor changes
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>exchange:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>exchange</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
 
