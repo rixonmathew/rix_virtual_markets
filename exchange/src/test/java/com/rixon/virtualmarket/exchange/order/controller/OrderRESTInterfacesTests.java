@@ -24,7 +24,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class OrderRESTInterfacesTests {
 
     @Test
-    @Ignore
     public void testPOSTOperationForValidOrder() {
         String orderURL = "http://localhost:8080/exchange/order";
         Order mockOrder = JSON.parseObject(TestUtil.fileContentAsString("newSingleOrder.json"),Order.class);
@@ -34,7 +33,6 @@ public class OrderRESTInterfacesTests {
     }
 
     @Test
-    @Ignore
     public void testGetOperationForOrder() {
         String orderURL = "http://localhost:8080/exchange/order/{id}";
         Order order = new RestTemplate().getForObject(orderURL,Order.class,"000083656");
@@ -42,7 +40,6 @@ public class OrderRESTInterfacesTests {
     }
 
     @Test
-    @Ignore
     public void testDeleteOperationForOrder() {
         String orderURL = "http://localhost:8080/exchange/order/{id}";
         new RestTemplate().delete(orderURL,"10101");
