@@ -39,7 +39,6 @@ public class MessageBasedOrderingTest {
     }
 
     @Test
-    @Ignore
     public void testSimpleOrderOverMessage() {
         long startTime = System.currentTimeMillis();
         sendMultipleOrdersOverMessages();
