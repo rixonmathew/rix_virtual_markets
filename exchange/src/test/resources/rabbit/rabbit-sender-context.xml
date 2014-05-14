@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+                           http://www.springframework.org/schema/rabbit
+                           http://www.springframework.org/schema/rabbit/spring-rabbit-1.2.xsd">
+
+    <!--  first following line creates a rabbit connection factory with specified parameters -->
+    <rabbit:connection-factory id="connectionFactory"
+                               host="localhost"
+                               username="rixon"
+                               password="rabbit"
+                               channel-cache-size="10"/>
+    <!-- obtain admin rights to create the an exchange -->
+    <rabbit:admin connection-factory="connectionFactory" />
+    <rabbit:queue id="orderQueue" auto-delete="false" name="order_queue"/>
+    <rabbit:queue id="nonPersistentOrderQueue" auto-delete="false" durable="false" name="nond_order_queue"/>
+    <rabbit:topic-exchange id="orderExchange" name="RIX_EXCHANGE_ORDERS">
+        <rabbit:bindings>
+            <rabbit:binding queue="orderQueue" pattern="order.*"></rabbit:binding>
+            <rabbit:binding queue="nonPersistentOrderQueue" pattern="nond.*"></rabbit:binding>
+
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+    <rabbit:template id="orderTemplate"
+                     connection-factory="connectionFactory"
+                     exchange="RIX_EXCHANGE_ORDERS"/>
+</beans>

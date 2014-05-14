@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                            http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+                            http://www.springframework.org/schema/rabbit
+                            http://www.springframework.org/schema/rabbit/spring-rabbit-1.2.xsd">
+    <rabbit:connection-factory id="connectionFactory" host="localhost" username="rixon" password="rabbit" />
+    <!--
+    <rabbit:admin connection-factory="connectionFactory" />
+    <rabbit:queue id="orderQueue" name="order_queue"/>
+    <rabbit:topic-exchange id="myExchange" name="RIX_EXCHANGE_ORDERS">
+        <rabbit:bindings>
+            <rabbit:binding queue="orderQueue" pattern="order.*"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+    -->
+
+    <bean id="orderMessageListener" class="com.rixon.virtualmarket.exchange.order.messaging.OrderMessageListener" />
+    <!-- glue the listener and myAnonymousQueue to the container-->
+    <rabbit:listener-container id="myListenerContainer" connection-factory="connectionFactory">
+        <rabbit:listener ref="orderMessageListener" queue-names="order_queue"/>
+    </rabbit:listener-container>
+    <rabbit:template id="orderResponseTemplate"
+                     connection-factory="connectionFactory"
+                     exchange="RIX_EXCHANGE_ORDERS"/>
+
+</beans>
