@@ -36,6 +36,12 @@ public class OrderController {
         return orderHandler.getOrderForId(id);
     }
 
+    @RequestMapping(value = "/{id}",
+            method = RequestMethod.DELETE)
+    public @ResponseBody OrderResponse delete(@PathVariable String id){
+        return orderHandler.delete(id);
+    }
+
     private String responseAsJSON(OrderResponse orderResponse){
         PropertyFilter filter = new PropertyFilter() {
             public boolean apply(Object source, String name, Object value) {

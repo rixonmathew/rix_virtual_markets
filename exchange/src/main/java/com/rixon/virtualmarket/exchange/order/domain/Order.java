@@ -1,5 +1,8 @@
 package com.rixon.virtualmarket.exchange.order.domain;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Date;
 
 /**
@@ -10,8 +13,10 @@ import java.util.Date;
  * Date: 13/8/13
  * Time: 5:32 PM
  */
+@Document(collection = "orders")
 public class Order {
 
+    @Id
     private String orderID;
     private String secondaryOrderID;
     private Date tradeOriginationDate;

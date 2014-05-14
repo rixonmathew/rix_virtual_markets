@@ -2,14 +2,11 @@ package com.rixon.virtualmarket.exchange.order.handler;
 
 import com.rixon.virtualmarket.exchange.order.domain.Order;
 import com.rixon.virtualmarket.exchange.order.domain.OrderResponse;
+import com.rixon.virtualmarket.exchange.order.repository.OrderRepository;
 import com.rixon.virtualmarket.exchange.order.validator.OrderValidator;
 import com.rixon.virtualmarket.exchange.order.validator.OrderValidatorFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 
 /**
  * This class is responsible for handling the Orders in the exchange
@@ -20,11 +17,15 @@ import java.util.Calendar;
 @Service
 public class OrderHandler {
 
+    @Autowired
+    private OrderRepository orderRepository;
+
     public OrderResponse placeOrder(Order order) {
         OrderResponse orderResponse = createTemplateResponse(order);
         validateOrder(order,orderResponse);
         if (isOrderOK(orderResponse)) {
-            updateResponse(order,orderResponse);
+            orderRepository.save(order);
+            updateResponse(order, orderResponse);
         }
         return orderResponse;
     }
@@ -49,14 +50,18 @@ public class OrderHandler {
     }
 
     public Order getOrderForId(String orderId) {
-        Order order = new Order();
-        order.setOrderID(orderId);
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
-        try {
-            order.setTradeDate(dateFormat.parse("20130811"));
-        } catch (ParseException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        return orderRepository.findOne(orderId);
+    }
+
+    public OrderResponse delete(String orderID) {
+        OrderResponse orderResponse = new OrderResponse();
+        orderResponse.setOrderID(orderID);
+        if (orderID!=null) {
+            orderRepository.delete(orderID);
+            orderResponse.setStatus("OK");
+        } else {
+            orderResponse.setStatus("NOK");
         }
-        return order;
+        return orderResponse;
     }
 }

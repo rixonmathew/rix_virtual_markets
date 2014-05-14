@@ -3,12 +3,18 @@ package com.rixon.virtualmarket.json;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.PropertyFilter;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.rixon.virtualmarket.exchange.order.domain.Order;
 import com.rixon.virtualmarket.exchange.order.domain.OrderResponse;
+import com.rixon.virtualmarket.util.TestUtil;
 import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static junit.framework.TestCase.assertNotNull;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
  * This class is used for testing the JSON configuration using filters and SerializerFeatures
@@ -64,4 +70,14 @@ public class FastJSONTest {
          String response = JSON.toJSONString(orderResponse, filter,features);
          //System.out.println("response = " + response);
     }
+
+    @Test
+    @Ignore
+    public void testReadingMultipleJSONsFromFile() {
+        String jsonString = TestUtil.fileContentAsString("rix_exchange_orders-part-0");
+        List<Order> orders = JSON.parseArray(jsonString,Order.class);
+        assertNotNull(orders);
+        assertThat(orders.size(),is(15000));
+    }
+
 }
