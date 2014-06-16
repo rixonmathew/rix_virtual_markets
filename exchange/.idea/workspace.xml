@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1be2acc4-5af1-4a47-bc22-7e61c46d330e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/DailyTrade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rixon_ramodage_ramodage_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/TestRamodage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/com/rixon/virtualmarket/util/daily_trades.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exchange.iml" afterPath="$PROJECT_DIR$/exchange.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/exchange_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/exchange_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -15,7 +9,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/handler/OrderHandler.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
     <file path="$PROJECT_DIR$/src/test/resources/rabbit/rabbit-sender-context.xml" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
-    <file path="/Dummy.txt" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402915215476" ignored="false" />
+    <file path="/Dummy.txt" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402917570352" ignored="false" />
     <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/generator/FileGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402863162233" ignored="false" />
     <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/AbstractDataGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402862738825" ignored="false" />
     <file path="/AbstractDataGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402862730305" ignored="false" />
@@ -300,10 +294,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRamodage.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestRamodage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/TestRamodage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="29" selection-start="735" selection-end="735" vertical-scroll-proportion="0.6940639">
+            <state line="32" column="29" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -331,10 +325,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="32" selection-start="4692" selection-end="4692" vertical-scroll-proportion="-29.714285">
+            <state line="138" column="0" selection-start="5115" selection-end="5115" vertical-scroll-proportion="0.7759434">
               <folding />
             </state>
           </provider>
@@ -414,10 +408,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/controller/OrderRESTInterfacesTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/messaging/MessageBasedOrderingTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/DailyTrade.java" />
         <option value="$PROJECT_DIR$/src/test/resources/com/rixon/virtualmarket/util/daily_trades.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/TestRamodage.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -976,7 +970,11 @@
       <created>1400035721684</created>
       <updated>1400035721684</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1) Introduced ramodage as a lib for testing">
+      <created>1402917539922</created>
+      <updated>1402917539922</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1054,7 +1052,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="validated messaging based tests using RabbitMQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="1) Introduced ramodage as a lib for testing" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1070,6 +1068,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="fixed tests and validated that project is still working" />
     <MESSAGE value="validated messaging based tests using RabbitMQ" />
+    <MESSAGE value="1) Introduced ramodage as a lib for testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1164,13 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="32" selection-start="4692" selection-end="4692" vertical-scroll-proportion="-29.714285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/DailyTrade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="119" column="0" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0">
@@ -1189,10 +1181,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/TestRamodage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="29" selection-start="735" selection-end="735" vertical-scroll-proportion="0.6940639">
+        <state line="32" column="29" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="0" selection-start="5115" selection-end="5115" vertical-scroll-proportion="0.7759434">
+          <folding />
         </state>
       </provider>
     </entry>
