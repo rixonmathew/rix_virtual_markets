@@ -2,20 +2,235 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1be2acc4-5af1-4a47-bc22-7e61c46d330e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/messaging/MessageBasedOrderingTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/messaging/MessageBasedOrderingTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/DailyTrade.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rixon_ramodage_ramodage_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/TestRamodage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/com/rixon/virtualmarket/util/daily_trades.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exchange.iml" afterPath="$PROJECT_DIR$/exchange.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/exchange_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/exchange_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="exchange.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/Side.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/Order.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/OrderType.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/OrderResponse.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/handler/OrderHandler.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
     <file path="$PROJECT_DIR$/src/test/resources/rabbit/rabbit-sender-context.xml" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/controller/OrderController.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400033267754" ignored="false" />
-    <file path="/Dummy.txt" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1400035362456" ignored="false" />
+    <file path="/Dummy.txt" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402915215476" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/generator/FileGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402863162233" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/AbstractDataGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402862738825" ignored="false" />
+    <file path="/AbstractDataGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402862730305" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/RandomFileGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402862777555" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/validator/PropertyValidator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="/PropertyValidator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402909484727" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/main/MockGenerationClient.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402852769537" ignored="false" />
+    <file path="/MockGenerationClient.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402852768407" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/main/SchemaGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402854085394" ignored="false" />
+    <file path="/SchemaGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402854084125" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/util/Constants.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402865704638" ignored="false" />
+    <file path="/Constants.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402859474735" ignored="false" />
+    <file path="/a.dummy" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901211387" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/main/OptionsGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402859632222" ignored="false" />
+    <file path="/OptionsGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402905874542" ignored="false" />
+    <file path="/FileGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402904076900" ignored="false" />
+    <file path="/RandomFileGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402862776443" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/ramodage/provider/TestDateValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402824670170" ignored="false" />
+    <file path="/TestDateValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402824352555" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/util/DateUtil.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402811506781" ignored="false" />
+    <file path="/DateUtil.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402811503139" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/provider/DateValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402826090913" ignored="false" />
+    <file path="/DateValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402825861397" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/provider/IntegerValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402810287749" ignored="false" />
+    <file path="/IntegerValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402914274366" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/provider/IDValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402826116958" ignored="false" />
+    <file path="/IDValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402825875348" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/provider/TimestampValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402826697851" ignored="false" />
+    <file path="/TimestampValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402826677897" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/provider/AbstractValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402826017662" ignored="false" />
+    <file path="/AbstractValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402826017662" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/provider/AlphaNumericValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402826029975" ignored="false" />
+    <file path="/AlphaNumericValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402825817904" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/provider/BigDecimalValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402826041988" ignored="false" />
+    <file path="/BigDecimalValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402825840124" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/ramodage/main/LibTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402900497955" ignored="false" />
+    <file path="/LibTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402914752585" ignored="false" />
+    <file path="/fragment.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402916870719" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/main/RandomData.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402829579444" ignored="false" />
+    <file path="/RandomData.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402839401160" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/factory/RamodageFactory.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="/RamodageFactory.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402829094025" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/ramodage/util/TestUtil.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402829409425" ignored="false" />
+    <file path="/TestUtil.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402829329257" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/main/Ramodage.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402838068819" ignored="false" />
+    <file path="/Ramodage.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402905752272" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/generator/DataGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402838068819" ignored="false" />
+    <file path="/DataGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402903071539" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/factory/DataGenerationFactory.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/ramodage/main/ClientTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402900671615" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/generator/InMemoryDataGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402863515428" ignored="false" />
+    <file path="/InMemoryDataGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402903788789" ignored="false" />
+    <file path="/DataGenerationFactory.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402905704335" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/DataGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402862750651" ignored="false" />
+    <file path="/DataGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402862750651" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/FileGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402837896240" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/FileGenerationContext.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402839934913" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/model/Ramodage.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402838030154" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/model/RandomData.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/model/RandomDataImpl.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402839801761" ignored="false" />
+    <file path="/RandomDataImpl.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402839800768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/DataGenerationStrategyContext.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402863657428" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/generator/DataDestination.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402843633095" ignored="false" />
+    <file path="/DataDestination.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402862578405" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/generator/DestinationMetaData.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402843590339" ignored="false" />
+    <file path="/DestinationMetaData.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402852473577" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/destination/DataDestination.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/destination/DestinationMetaData.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/destination/DestinationType.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="/DestinationType.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402862253414" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/destination/InMemoryDestination.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="/InMemoryDestination.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402863098656" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/destination/FileBasedDataDestination.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="/FileBasedDataDestination.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402868573559" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/record/RecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402858396495" ignored="false" />
+    <file path="/RecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402858396495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/record/AbstractRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402899477250" ignored="false" />
+    <file path="/AbstractRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402865058252" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/marketdata/AbstractMarketDataGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402867505834" ignored="false" />
+    <file path="/AbstractMarketDataGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402867504962" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/record/DelimitedRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402852948681" ignored="false" />
+    <file path="/DelimitedRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402852947502" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/record/FixedWidthRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402852981847" ignored="false" />
+    <file path="/FixedWidthRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402852980318" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/record/XMLRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402852994488" ignored="false" />
+    <file path="/XMLRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402852993421" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/record/JSONRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402853007053" ignored="false" />
+    <file path="/JSONRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402853005966" ignored="false" />
+    <file path="/ClientTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402900617550" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/ramodage/generator/TestQuotesGeneration.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402859739260" ignored="false" />
+    <file path="/TestQuotesGeneration.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402854321692" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/ramodage/generator/TestMockFileGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402854306998" ignored="false" />
+    <file path="/TestMockFileGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402854305628" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/ramodage/generator/TestTradeDataGeneration.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402868981367" ignored="false" />
+    <file path="/TestTradeDataGeneration.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402867738163" ignored="false" />
+    <file path="/SchemaParser.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402854034212" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/configuration/SchemaParser.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402854070534" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/ramodage/configuration/TestJSONConfigReader.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402854158391" ignored="false" />
+    <file path="/TestJSONConfigReader.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402854157284" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/destination/AbstractDataDestination.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="/AbstractDataDestination.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402863023566" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/ramodage/util/ReflectionTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402859994961" ignored="false" />
+    <file path="/ReflectionTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402861714849" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/util/ReflectionUtils.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402865731010" ignored="false" />
+    <file path="/ReflectionUtils.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402911209574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/configuration/Options.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402859738859" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/ramodage/util/ReflectionUtilsTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402865562819" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/ramodage/util/DummyClass.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402861804939" ignored="false" />
+    <file path="/DummyClass.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402861802906" ignored="false" />
+    <file path="/ReflectionUtilsTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402865562819" ignored="false" />
+    <file path="/DataGenerationStrategyContext.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402902940476" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/ramodage/strategy/RandomInMemoryGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402862826058" ignored="false" />
+    <file path="/RandomInMemoryGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402862824483" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/ramodage/main/DailyTrade.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402865797406" ignored="false" />
+    <file path="/DailyTrade.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402864311099" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/resources/com/ramodage/util/daily_trades.json" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402864321072" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/pom.xml" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402916415677" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/resources/com/ramodage/util/mockProperties.properties" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402900772710" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/resources/com/ramodage/util/minProperties.properties" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402900779608" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/ramodage/provider/TestTimestampValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402900433416" ignored="false" />
+    <file path="/minProperties.properties" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901300906" ignored="false" />
+    <file path="/mockProperties.properties" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402911440588" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/provider/TimestampValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/provider/DateProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/provider/ValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/provider/TypeValueProviders.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402914322405" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/provider/DateValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/provider/IDValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/provider/AbstractValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/main/SchemaGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/provider/BigDecimalValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/provider/AlphaNumericValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/util/Constants.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402905908260" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/provider/StringValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/main/OptionsGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402905927568" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/DataGenerationStrategyContext.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402902941479" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/RandomFileGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/DataGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901186236" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/AbstractDataGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901186236" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/record/FixedWidthRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/record/AbstractRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/main/Ramodage.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402911740401" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/record/RecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/record/RecordCreationContext.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/record/DelimitedRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/provider/IntegerValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402914274860" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/marketdata/AbstractMarketDataGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/marketdata/TradesGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/marketdata/QuoteDataGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/generator/FileGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402904115440" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/configuration/Field.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/configuration/Schema.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/util/ReflectionUtilsTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/configuration/SchemaParser.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/configuration/Options.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402905764435" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/util/ReflectionUtils.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402911287611" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/util/DummyClass.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091494" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/RandomInMemoryGenerationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/main/ClientTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/util/TestUtil.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/main/DailyTrade.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/provider/TestRandomNumberGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/provider/TestBigDecimalValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/provider/TestAlphaNumericValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/provider/TestIDValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/provider/TestStringValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/provider/TestDateValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/provider/TestTimestampValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/generator/TestQuotesGeneration.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/generator/TestTradeDataGeneration.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/generator/TestMockFileGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/configuration/TestJSONConfigReader.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/configuration/TestFastJSONParser.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/main/LibTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402914759110" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/generator/DataGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402903166409" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/record/XMLRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/generator/InMemoryDataGenerator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402903801521" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/strategy/record/JSONRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/strategy/TestXMLRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/strategy/TestJSONRecordCreationStrategy.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/strategy/MockDataProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/main/MockGenerationClient.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901186236" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/util/DateUtil.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/util/StringUtil.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091127" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/resources/com/rixon/ramodage/util/daily_trades.json" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/resources/com/rixon/ramodage/util/quotes.json" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/resources/com/rixon/ramodage/util/positions.json" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/ramodage.iml" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/resources/com/rixon/ramodage/util/minProperties.properties" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402911459725" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/resources/com/rixon/ramodage/util/mockProperties.properties" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402911440588" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/resources/com/rixon/ramodage/util/rp_positions_xml.json" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/resources/com/rixon/ramodage/util/rp_positions_json.json" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/.idea/compiler.xml" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/resources/com/rixon/ramodage/util/instruments.json" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/resources/com/rixon/ramodage/util/rp_positions_fw.json" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901091495" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/destination/DataDestination.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901186236" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/factory/DataGenerationFactory.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402905713586" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/destination/DestinationMetaData.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901186236" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/model/RandomData.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901186236" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/destination/DestinationType.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901186236" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/destination/InMemoryDestination.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901186236" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/destination/FileBasedDataDestination.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901186236" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/factory/RamodageFactory.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901186236" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/validator/PropertyValidator.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402909485914" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/destination/AbstractDataDestination.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901186236" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/model/RandomDataImpl.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402901186237" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/validator/PropertyValidatorTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402911325722" ignored="false" />
+    <file path="/PropertyValidatorTest.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402909833769" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/main/java/com/rixon/ramodage/util/MockPropertyProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402909853532" ignored="false" />
+    <file path="/MockPropertyProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402908426811" ignored="false" />
+    <file path="$PROJECT_DIR$/../../workspace_java/ramodage/src/test/java/com/rixon/ramodage/provider/TestIntegerValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402914884592" ignored="false" />
+    <file path="/TestIntegerValueProvider.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402914868130" ignored="false" />
+    <file path="/TypeValueProviders.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402914321629" ignored="false" />
+    <file path="/pom.xml" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402916524501" ignored="false" />
+    <file path="/TestRamodage.java" changelist="1be2acc4-5af1-4a47-bc22-7e61c46d330e" time="1402917448568" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +245,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -66,7 +282,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -79,25 +294,101 @@
       <file leaf-file-name="TestUtil.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/TestUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
+            <state line="29" column="58" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersistenceTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/persistence/PersistenceTests.java">
+      <file leaf-file-name="TestRamodage.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/TestRamodage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="33" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0">
+            <state line="32" column="29" selection-start="735" selection-end="735" vertical-scroll-proportion="0.6940639">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="daily_trades.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/com/rixon/virtualmarket/util/daily_trades.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="1" selection-start="1920" selection-end="1920" vertical-scroll-proportion="-44.642857">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageBasedOrderingTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/messaging/MessageBasedOrderingTest.java">
+      <file leaf-file-name="DailyTrade.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/DailyTrade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="55" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.6191011">
+            <state line="119" column="0" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="124" column="32" selection-start="4692" selection-end="4692" vertical-scroll-proportion="-29.714285">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongoConfiguration.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mongoConfiguration.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="62" selection-start="751" selection-end="763" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderMessageListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/messaging/OrderMessageListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="45" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="10" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/controller/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="0" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,6 +414,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/controller/OrderRESTInterfacesTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/messaging/MessageBasedOrderingTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/DailyTrade.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/rixon/virtualmarket/util/daily_trades.json" />
+        <option value="$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/TestRamodage.java" />
       </list>
     </option>
   </component>
@@ -137,6 +432,23 @@
     <option name="width" value="2560" />
     <option name="height" value="1440" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>Threading issues</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -144,11 +456,11 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -164,7 +476,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -200,6 +511,36 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -226,34 +567,8 @@
               <option name="myItemId" value="virtualmarket" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="virtualmarket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,14 +595,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="virtualmarket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="messaging" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,9 +615,96 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="order" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="order" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="messaging" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -319,21 +713,21 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.MessageBasedOrderingTest.testSimpleOrderOverMessage">
+  <component name="RunManager" selected="JUnit.TestRamodage.testRandomDataGeneration">
     <configuration default="false" name="OrderRESTInterfacesTests" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -412,6 +806,34 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="TestRamodage.testRandomDataGeneration" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.rixon.virtualmarket.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="exchange" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.rixon.virtualmarket.util" />
+      <option name="MAIN_CLASS_NAME" value="com.rixon.virtualmarket.util.TestRamodage" />
+      <option name="METHOD_NAME" value="testRandomDataGeneration" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -424,19 +846,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -465,6 +874,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -503,16 +925,18 @@
       <patterns />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.OrderRESTInterfacesTests" />
       <item index="1" class="java.lang.String" itemvalue="Application.OrderPopulator" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.MessageBasedOrderingTest.testSimpleOrderOverMessage" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestRamodage.testRandomDataGeneration" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MessageBasedOrderingTest.testSimpleOrderOverMessage" />
-        <item index="1" class="java.lang.String" itemvalue="Application.OrderPopulator" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.OrderRESTInterfacesTests" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestRamodage.testRandomDataGeneration" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MessageBasedOrderingTest.testSimpleOrderOverMessage" />
+        <item index="2" class="java.lang.String" itemvalue="Application.OrderPopulator" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.OrderRESTInterfacesTests" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -548,14 +972,18 @@
       <created>1400035373586</created>
       <updated>1400035373586</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="validated messaging based tests using RabbitMQ">
+      <created>1400035721684</created>
+      <updated>1400035721684</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33457527" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -567,7 +995,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -575,8 +1003,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.670812" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32845646" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980111" sideWeight="0.6721311" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -626,7 +1054,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed tests and validated that project is still working" />
+    <option name="LAST_COMMIT_MESSAGE" value="validated messaging based tests using RabbitMQ" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -641,6 +1069,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="fixed tests and validated that project is still working" />
+    <MESSAGE value="validated messaging based tests using RabbitMQ" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -650,102 +1079,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/com/rixon/virtualmarket/util/newSingleOrder.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/controller/OrderServiceTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mongoConfiguration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="62" selection-start="751" selection-end="763" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/com/rixon/virtualmarket/util/newSingleOrder.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/controller/OrderServiceTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="796" selection-end="796" vertical-scroll-proportion="0.44431946">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/controller/OrderRESTInterfacesTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1775" selection-end="1775" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/dataloader/OrderPopulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="27" selection-start="640" selection-end="654" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/com/rixon/virtualmarket/util/rix_exchange_orders-part-0">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="56" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/configuration/ConfigurationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/handler/PlaceOrderTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="13" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/json/FastJSONTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="24" column="13" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/com/rixon/virtualmarket/util/newSingleOrder-response.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/com/rixon/virtualmarket/util/newSingleOrderWithoutTransactTime.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/TestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/persistence/PersistenceTests.java">
@@ -757,8 +1108,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/exchange/order/messaging/MessageBasedOrderingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="55" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.6191011">
+        <state line="71" column="32" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/domain/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mongoConfiguration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="62" selection-start="751" selection-end="763" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/messaging/OrderMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="45" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="10" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rixon/virtualmarket/exchange/order/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/TestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="58" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="32" selection-start="4692" selection-end="4692" vertical-scroll-proportion="-29.714285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/DailyTrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="0" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/rixon/virtualmarket/util/daily_trades.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="1" selection-start="1920" selection-end="1920" vertical-scroll-proportion="-44.642857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/rixon/virtualmarket/util/TestRamodage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="29" selection-start="735" selection-end="735" vertical-scroll-proportion="0.6940639">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

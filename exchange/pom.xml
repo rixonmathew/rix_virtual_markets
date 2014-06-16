@@ -23,6 +23,7 @@
         <fastjson.version>1.1.27</fastjson.version>
         <spring-rabbit.version>1.2.0.RELEASE</spring-rabbit.version>
         <spring-amqp.version>1.2.0.RELEASE</spring-amqp.version>
+        <ramodage.version>1.0</ramodage.version>
     </properties>
     <dependencies>
 
@@ -117,6 +118,11 @@
             <artifactId>spring-test</artifactId>
             <version>${spring.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.rixon.ramodage</groupId>
+            <artifactId>ramodage</artifactId>
+            <version>${ramodage.version}</version>
         </dependency>
     </dependencies>
     <build>
