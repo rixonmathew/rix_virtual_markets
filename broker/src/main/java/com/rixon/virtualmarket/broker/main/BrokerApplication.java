@@ -1,19 +1,19 @@
 package com.rixon.virtualmarket.broker.main;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@SpringBootApplication
 @RestController
-@EnableAutoConfiguration
 @RequestMapping("/rix_broker")
 public class BrokerApplication {
 
 
     @RequestMapping
     public String home() {
-        return "I am a broker";
+        return "I am a primer broker";
     }
 
     public static void main(String[] args) {
