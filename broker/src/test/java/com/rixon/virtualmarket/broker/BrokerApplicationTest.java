@@ -1,6 +1,8 @@
 package com.rixon.virtualmarket.broker;
 
 import com.rixon.virtualmarket.broker.controller.OrderController;
+import com.rixon.virtualmarket.broker.models.OrderResponse;
+import com.rixon.virtualmarket.order.Order;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +39,15 @@ public class BrokerApplicationTest {
         ResponseEntity<String> responseEntity = rest.getForEntity(url, String.class);
         assertEquals("HTTP Response status is not as expected", HttpStatus.OK,responseEntity.getStatusCode());
         assertEquals("Body is not as expected", "I am a prime broker", responseEntity.getBody());
+    }
+
+    @Test
+    public void testPostOperation() {
+        RestTemplate placeOrderTemplate = new TestRestTemplate();
+        String url = "http://localhost:"+port+"/rix_broker/order";
+        ResponseEntity<OrderResponse> orderResponseResponseEntity = placeOrderTemplate.postForEntity(url, new Order(), OrderResponse.class);
+        assertEquals("HTTP Response status is not as expected", HttpStatus.OK,orderResponseResponseEntity.getStatusCode());
+        System.out.println("orderResponseResponseEntity.getBody() = " + orderResponseResponseEntity.getBody());
 
     }
 }

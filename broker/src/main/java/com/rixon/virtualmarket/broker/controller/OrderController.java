@@ -1,7 +1,7 @@
 package com.rixon.virtualmarket.broker.controller;
 
 import com.rixon.virtualmarket.broker.models.OrderResponse;
-import org.springframework.core.annotation.Order;
+import com.rixon.virtualmarket.order.Order;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
@@ -15,9 +15,9 @@ public class OrderController {
         return "I am a prime broker";
     }
 
-    @RequestMapping(name = "${place.order}",
+    @RequestMapping(path = "${place.order}",
                     method = RequestMethod.POST,
-                    headers = {"Content-Type=application/json"})
+                    headers = {"Content-Type=application/json;charset=UTF-8"})
     public @ResponseBody OrderResponse acceptOrder(@RequestBody Order order) {
         OrderResponse orderResponse = new OrderResponse();
         orderResponse.setStatus("Success for " + order.toString());

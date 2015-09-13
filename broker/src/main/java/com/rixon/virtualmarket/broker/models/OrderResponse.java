@@ -1,5 +1,8 @@
 package com.rixon.virtualmarket.broker.models;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
+
 import java.time.LocalDateTime;
 
 public class OrderResponse {
@@ -18,6 +21,7 @@ public class OrderResponse {
         this.status = status;
     }
 
+    @JsonSerialize(using = LocalDateTimeSerializer.class)
     public LocalDateTime getDateTime() {
         return dateTime;
     }

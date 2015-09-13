@@ -2,16 +2,22 @@ package com.rixon.virtualmarket.order;
 
 import com.rixon.virtualmarket.instrument.FinancialInstrument;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-public class Order {
+public class Order implements Serializable{
+
+    private static final long serialVersionUID = 42L;
 
     private FinancialInstrument financialInstrument;
     private BigDecimal quantity;
     private BigDecimal price;
     private OrderType orderType;
     private LocalDateTime dateTime;
+
+    public Order() {
+    }
 
     public FinancialInstrument getFinancialInstrument() {
         return financialInstrument;
