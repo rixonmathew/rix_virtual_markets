@@ -1,4 +1,4 @@
-package com.rixon.virtualmarket.broker.main;
+package com.rixon.virtualmarket.broker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,7 +13,7 @@ public class BrokerApplication {
 
     @RequestMapping
     public String home() {
-        return "I am a primer broker";
+        return "I am a prime broker";
     }
 
     public static void main(String[] args) {

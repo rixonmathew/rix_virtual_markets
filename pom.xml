@@ -16,5 +16,6 @@
         <module>depository</module>
         <module>clearinghouse</module>
         <module>regulator</module>
+        <module>models</module>
     </modules>
 </project>
