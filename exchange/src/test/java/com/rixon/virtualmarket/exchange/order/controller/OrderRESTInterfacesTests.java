@@ -21,6 +21,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
  * Date: 14/8/13
  * Time: 2:37 PM
  */
+@Ignore
 public class OrderRESTInterfacesTests {
 
     @Test
