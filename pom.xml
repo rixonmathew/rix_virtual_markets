@@ -9,13 +9,14 @@
     <name>rix_virtual_markets</name>
     <packaging>pom</packaging>
     <modules>
-        <module>instituition</module>
+        <module>models</module>
         <module>broker</module>
+        <module>institution</module>
         <module>exchange</module>
         <module>custodian</module>
         <module>depository</module>
         <module>clearinghouse</module>
         <module>regulator</module>
-        <module>models</module>
+        <module>ui</module>
     </modules>
 </project>

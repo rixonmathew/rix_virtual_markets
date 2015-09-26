@@ -1,8 +1,10 @@
 package com.rixon.virtualmarket.legalentity;
 
+import java.io.Serializable;
 import java.util.Map;
 
-public class LegalEntity {
+public class LegalEntity implements Serializable{
+    private final static long serialVersionUID=42l;
 
     private String name;
     private Map<String,Identifier> identifiers;

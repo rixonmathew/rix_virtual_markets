@@ -1,15 +1,23 @@
 package com.rixon.virtualmarket.instrument;
 
+import com.rixon.virtualmarket.quote.InstrumentQuote;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Map;
 
-public class FinancialInstrument {
+public class FinancialInstrument implements Serializable{
+
+    private final static long serialVersionUID=42l;
 
     private String name;
     private String description;
     private InstrumentType instrumentType;
-    private InstrumentPrice instrumentPrice;
+    private InstrumentQuote instrumentQuote;
     private InstrumentMetrics instrumentMetrics;
     private Map<String,InstrumentIdentifier> identifiers;
+    private BigDecimal tickSize;
+    private InstrumentQuote issuingQuote;
 
     public String getName() {
         return name;
@@ -35,12 +43,12 @@ public class FinancialInstrument {
         this.instrumentType = instrumentType;
     }
 
-    public InstrumentPrice getInstrumentPrice() {
-        return instrumentPrice;
+    public InstrumentQuote getInstrumentQuote() {
+        return instrumentQuote;
     }
 
-    public void setInstrumentPrice(InstrumentPrice instrumentPrice) {
-        this.instrumentPrice = instrumentPrice;
+    public void setInstrumentQuote(InstrumentQuote instrumentQuote) {
+        this.instrumentQuote = instrumentQuote;
     }
 
     public InstrumentMetrics getInstrumentMetrics() {
@@ -59,15 +67,33 @@ public class FinancialInstrument {
         this.identifiers = identifiers;
     }
 
+    public BigDecimal getTickSize() {
+        return tickSize;
+    }
+
+    public void setTickSize(BigDecimal tickSize) {
+        this.tickSize = tickSize;
+    }
+
+    public InstrumentQuote getIssuingQuote() {
+        return issuingQuote;
+    }
+
+    public void setIssuingQuote(InstrumentQuote issuingQuote) {
+        this.issuingQuote = issuingQuote;
+    }
+
     @Override
     public String toString() {
         return "FinancialInstrument{" +
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", instrumentType=" + instrumentType +
-                ", instrumentPrice=" + instrumentPrice +
+                ", instrumentQuote=" + instrumentQuote +
                 ", instrumentMetrics=" + instrumentMetrics +
                 ", identifiers=" + identifiers +
+                ", tickSize=" + tickSize +
+                ", issuingQuote=" + issuingQuote +
                 '}';
     }
 }

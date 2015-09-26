@@ -1,6 +1,9 @@
 package com.rixon.virtualmarket.instrument;
 
-public class InstrumentIdentifier {
+import java.io.Serializable;
+
+public class InstrumentIdentifier implements Serializable{
+    private final static long serialVersionUID=42l;
 
     private String type;
     private String description;

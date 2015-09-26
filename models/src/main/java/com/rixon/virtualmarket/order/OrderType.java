@@ -1,6 +1,10 @@
 package com.rixon.virtualmarket.order;
 
-public class OrderType {
+import java.io.Serializable;
+
+public class OrderType implements Serializable{
+    private final static long serialVersionUID=42l;
+
     private String type;
     private String description;
 
