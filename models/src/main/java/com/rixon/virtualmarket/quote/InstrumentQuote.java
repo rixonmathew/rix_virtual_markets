@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public class InstrumentQuote implements Serializable{
+
     private final static long serialVersionUID=42l;
 
     private LocalDateTime timeStamp;

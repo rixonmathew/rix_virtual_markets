@@ -20,10 +20,10 @@ import static org.hamcrest.MatcherAssert.assertThat;
  * Date: 14/8/13
  * Time: 2:37 PM
  */
+@Ignore
 public class OrderServiceTests {
 
     @Test
-    @Ignore
     public void testRestfulServiceForValidOrder() {
         String orderURL = "http://localhost:8080/exchange/order";
         Order mockOrder = JSON.parseObject(TestUtil.fileContentAsString("newSingleOrder.json"),Order.class);
@@ -33,7 +33,6 @@ public class OrderServiceTests {
     }
 
     @Test
-    @Ignore
     public void testGetOrderById() {
         String orderURL = "http://localhost:8080/exchange/order/{id}";
         Order order = new RestTemplate().getForObject(orderURL,Order.class,"10101");

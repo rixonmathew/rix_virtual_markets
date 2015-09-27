@@ -27,6 +27,7 @@ import java.util.concurrent.Executors;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:rabbit/rabbit-sender-context.xml")
+@Ignore
 public class MessageBasedOrderingTest {
 
     @Autowired
