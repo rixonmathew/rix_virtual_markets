@@ -18,6 +18,7 @@ public class FinancialInstrument implements Serializable{
     private Map<String,InstrumentIdentifier> identifiers;
     private BigDecimal tickSize;
     private InstrumentQuote issuingQuote;
+    private String issuingCurrency;
 
     public String getName() {
         return name;
@@ -59,7 +60,7 @@ public class FinancialInstrument implements Serializable{
         this.instrumentMetrics = instrumentMetrics;
     }
 
-    private InstrumentIdentifier getIdentifier(String type) {
+    public InstrumentIdentifier getIdentifier(String type) {
         return identifiers.get(type);
     }
 
@@ -83,6 +84,14 @@ public class FinancialInstrument implements Serializable{
         this.issuingQuote = issuingQuote;
     }
 
+    public void setIssuingCurrency(String issuingCurrency) {
+        this.issuingCurrency = issuingCurrency;
+    }
+
+    public String getIssuingCurrency() {
+        return issuingCurrency;
+    }
+
     @Override
     public String toString() {
         return "FinancialInstrument{" +
@@ -94,6 +103,7 @@ public class FinancialInstrument implements Serializable{
                 ", identifiers=" + identifiers +
                 ", tickSize=" + tickSize +
                 ", issuingQuote=" + issuingQuote +
+                ", issuingCurrency='" + issuingCurrency + '\'' +
                 '}';
     }
 }

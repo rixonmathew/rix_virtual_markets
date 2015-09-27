@@ -18,5 +18,6 @@
         <module>clearinghouse</module>
         <module>regulator</module>
         <module>ui</module>
+        <module>data-provider</module>
     </modules>
 </project>
