@@ -1,9 +1,11 @@
 package com.rixon.virtualmarket.dataprovider.provider;
 
 import com.rixon.virtualmarket.order.OrderType;
+import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
+@Component
 public class OrderTypeProvider {
 
     private OrderType buy = new OrderType("BUY","Buy");

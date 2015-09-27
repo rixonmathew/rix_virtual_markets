@@ -16,6 +16,9 @@ public class InstrumentQuote implements Serializable{
     private String currency;
     private BigDecimal tickSize;
 
+    public InstrumentQuote() {
+    }
+
     public InstrumentQuote(LocalDateTime timeStamp, BigDecimal bid, BigDecimal ask, BigDecimal bidQuantity, BigDecimal askQuantity, String currency, BigDecimal tickSize) {
         this.timeStamp = timeStamp;
         this.bid = bid;
@@ -56,6 +59,34 @@ public class InstrumentQuote implements Serializable{
 
     public BigDecimal getTickSize() {
         return tickSize;
+    }
+
+    public void setTimeStamp(LocalDateTime timeStamp) {
+        this.timeStamp = timeStamp;
+    }
+
+    public void setBid(BigDecimal bid) {
+        this.bid = bid;
+    }
+
+    public void setAsk(BigDecimal ask) {
+        this.ask = ask;
+    }
+
+    public void setBidQuantity(BigDecimal bidQuantity) {
+        this.bidQuantity = bidQuantity;
+    }
+
+    public void setAskQuantity(BigDecimal askQuantity) {
+        this.askQuantity = askQuantity;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
+    public void setTickSize(BigDecimal tickSize) {
+        this.tickSize = tickSize;
     }
 
     @Override

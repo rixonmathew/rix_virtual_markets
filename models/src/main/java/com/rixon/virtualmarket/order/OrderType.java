@@ -13,6 +13,17 @@ public class OrderType implements Serializable{
         this.description = description;
     }
 
+    public OrderType() {
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
     @Override
     public String toString() {
         return "OrderType{" +

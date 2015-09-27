@@ -1,6 +1,7 @@
 package com.rixon.virtualmarket.dataprovider.provider;
 
 import com.rixon.virtualmarket.order.Order;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
@@ -13,6 +14,7 @@ public class OrderProvider {
     private OrderPriceProvider orderPriceProvider;
     private OrderQuantityProvider orderQuantityProvider;
 
+    @Autowired
     public OrderProvider(FinancialInstrumentProvider financialInstrumentProvider, OrderTypeProvider orderTypeProvider, OrderPriceProvider orderPriceProvider, OrderQuantityProvider orderQuantityProvider) {
         this.financialInstrumentProvider = financialInstrumentProvider;
         this.orderTypeProvider = orderTypeProvider;
