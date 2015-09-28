@@ -1,0 +1,22 @@
+body{
+    font-family: "Verdana";
+    font-size: 1.2em;
+}
+
+.left-panel{
+    width: 70%;
+    float:left;
+    height: 100%;
+}
+
+.right-panel-top{
+    width: 30%;
+    float:left;
+    height: 30%;
+}
+
+.right-panel-bottom{
+    width: 30%;
+    float:left;
+    height: 70%;
+}

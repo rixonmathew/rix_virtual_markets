@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Layout page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" th:href="@{/css/rvmui.css}" href="../../css/rvmui.css"/>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+</head>
+<body>
+<header>
+    <h1>Virtual Markets</h1>
+</header>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <a class="navbar-brand" href="#">Virtual Markets</a>
+    <ul class="nav nav-pills">
+        <li><a href="/rvmui/institutions">Institutions</a> </li>
+        <li><a href="/rvmui/brokers">Brokers</a></li>
+    </ul>
+    <div class="container-fluid">
+        <div layout:fragment="content" style="width:100%">
+            Fake content goes here....
+        </div>
+    </div>
+</nav>
+<footer>
+    <p>footer</p>
+    <p layout:fragment="custom-footer">Custom footer here</p>
+</footer>
+</body>
+</html>
