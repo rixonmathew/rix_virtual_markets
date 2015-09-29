@@ -8,6 +8,12 @@
     <version>1.0-SNAPSHOT</version>
     <name>rix_virtual_markets</name>
     <packaging>pom</packaging>
+    <properties>
+        <java.version>1.8</java.version>
+        <fastjson.version>1.1.27</fastjson.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <modules>
         <module>models</module>
         <module>broker</module>
@@ -19,5 +25,6 @@
         <module>regulator</module>
         <module>ui</module>
         <module>data-provider</module>
+        <module>bootstrap</module>
     </modules>
 </project>

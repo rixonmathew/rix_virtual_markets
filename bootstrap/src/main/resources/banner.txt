@@ -1,0 +1,5 @@
+===============================================
+RVM - Bootstrap application
+===============================================
+App version - ${application.formatted-version}
+Spring Boot Version - ${spring-boot.formatted-version}

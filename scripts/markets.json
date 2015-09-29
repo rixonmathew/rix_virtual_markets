@@ -1,0 +1,38 @@
+{
+  "messagingMode":"false",
+  "localSetup":"true",
+  "logLevel":"info",
+  "brokerConfigs":[
+    {
+      "name":"rvm_broker1",
+      "brokerEndpoint":"/rvm_broker1",
+      "brokerOrderEndpoint":"/order",
+      "serverPort":11280,
+      "serverAddress":"0.0.0.0",
+      "serverSessionTimeout":0,
+      "infoAppName":"Broker 1",
+      "infoAppDescription":"Broker 1",
+      "infoAppVersion":"1.0.0",
+      "pidLocation":"/tmp/pids",
+      "pidFilenmae":"rvm_broker1",
+      "jarLocation":"/tmp/rvm/brokers",
+      "jarName":"broker.jar"
+    },
+    {
+      "name":"rvm_broker2",
+      "brokerEndpoint":"/rvm_broker1",
+      "brokerOrderEndpoint":"/order",
+      "serverPort":11280,
+      "serverAddress":"0.0.0.0",
+      "serverSessionTimeout":0,
+      "infoAppName":"Broker 1",
+      "infoAppDescription":"Broker 1",
+      "infoAppVersion":"1.0.0",
+      "pidLocation":"/tmp/pids",
+      "pidFilenmae":"rvm_broker1",
+      "jarLocation":"/tmp/rvm/brokers",
+      "jarName":"broker.jar"
+    }
+
+  ]
+}
