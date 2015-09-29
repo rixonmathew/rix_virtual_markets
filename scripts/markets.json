@@ -14,7 +14,7 @@
       "infoAppDescription":"Broker 1",
       "infoAppVersion":"1.0.0",
       "pidLocation":"/tmp/pids",
-      "pidFilenmae":"rvm_broker1",
+      "pidFileName":"rvm_broker1",
       "jarLocation":"/tmp/rvm/brokers",
       "jarName":"broker.jar"
     },
@@ -29,7 +29,7 @@
       "infoAppDescription":"Broker 1",
       "infoAppVersion":"1.0.0",
       "pidLocation":"/tmp/pids",
-      "pidFilenmae":"rvm_broker1",
+      "pidFileName":"rvm_broker1",
       "jarLocation":"/tmp/rvm/brokers",
       "jarName":"broker.jar"
     }
