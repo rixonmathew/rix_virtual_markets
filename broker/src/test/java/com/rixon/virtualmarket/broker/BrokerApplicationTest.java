@@ -5,6 +5,8 @@ import com.rixon.virtualmarket.broker.models.OrderResponse;
 import com.rixon.virtualmarket.order.Order;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.IntegrationTest;
@@ -22,17 +24,18 @@ import static org.junit.Assert.assertNotNull;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = BrokerApplication.class)
 @WebAppConfiguration
-@IntegrationTest("server.port:8877")
+@IntegrationTest({"server.port:8877","broker.log.name:broker1"})
 public class BrokerApplicationTest {
 
     @Autowired
     private OrderController orderController;
-
+    private final static Logger LOGGER = LoggerFactory.getLogger(BrokerApplicationTest.class);
     @Value("${local.server.port}")
     int port;
 
     @Test
     public void testGetOperation(){
+        LOGGER.info("Testing Get operations from testGetOperation");
         assertNotNull(orderController);
         RestTemplate rest = new TestRestTemplate();
         String url = "http://localhost:"+port+"/rix_broker";
@@ -43,11 +46,10 @@ public class BrokerApplicationTest {
 
     @Test
     public void testPostOperation() {
+        LOGGER.info("Testing post operations from testPostOperation");
         RestTemplate placeOrderTemplate = new TestRestTemplate();
         String url = "http://localhost:"+port+"/rix_broker/order";
         ResponseEntity<OrderResponse> orderResponseResponseEntity = placeOrderTemplate.postForEntity(url, new Order(), OrderResponse.class);
         assertEquals("HTTP Response status is not as expected", HttpStatus.OK,orderResponseResponseEntity.getStatusCode());
-        System.out.println("orderResponseResponseEntity.getBody() = " + orderResponseResponseEntity.getBody());
-
     }
 }

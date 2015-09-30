@@ -18,6 +18,8 @@ public class BrokerParticipant extends DefaultParticipant{
 
     @Override
     protected void prepareCommands() {
+        startCommand = new String[10];
+        startCommand[0] = "java";
 
     }
 

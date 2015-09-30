@@ -2,6 +2,9 @@
   "messagingMode":"false",
   "localSetup":"true",
   "logLevel":"info",
+  "logDirectory":"/tmp/rvm_logs",
+  "logName":"rvm_processes.log",
+  "errorFileName":"rvm_processes.log.err",
   "brokerConfigs":[
     {
       "name":"rvm_broker1",

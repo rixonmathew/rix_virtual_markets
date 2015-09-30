@@ -15,6 +15,9 @@ public class MarketConfig {
     private List<DepositoryConfig> depositoryConfigs;
     private List<ClearingHouseConfig> clearingHouseConfigs;
     private List<UIConfig> uiConfigs;
+    private String logDirectory;
+    private String logName;
+    private String errorFileName;
 
     public boolean isMessagingMode() {
         return messagingMode;
@@ -104,6 +107,30 @@ public class MarketConfig {
         this.uiConfigs = uiConfigs;
     }
 
+    public String getLogDirectory() {
+        return logDirectory;
+    }
+
+    public void setLogDirectory(String logDirectory) {
+        this.logDirectory = logDirectory;
+    }
+
+    public String getLogName() {
+        return logName;
+    }
+
+    public void setLogName(String logName) {
+        this.logName = logName;
+    }
+
+    public String getErrorFileName() {
+        return errorFileName;
+    }
+
+    public void setErrorFileName(String errorFileName) {
+        this.errorFileName = errorFileName;
+    }
+
     @Override
     public String toString() {
         return "MarketConfig{" +
@@ -118,6 +145,9 @@ public class MarketConfig {
                 ", depositoryConfigs=" + depositoryConfigs +
                 ", clearingHouseConfigs=" + clearingHouseConfigs +
                 ", uiConfigs=" + uiConfigs +
+                ", logDirectory='" + logDirectory + '\'' +
+                ", logName='" + logName + '\'' +
+                ", errorFileName='" + errorFileName + '\'' +
                 '}';
     }
 }

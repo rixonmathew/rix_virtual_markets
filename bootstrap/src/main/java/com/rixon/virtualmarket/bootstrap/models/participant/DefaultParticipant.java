@@ -5,9 +5,9 @@ import com.rixon.virtualmarket.bootstrap.CommandExecutor;
 public abstract class DefaultParticipant implements Participant {
 
     protected CommandExecutor commandExecutor;
-    protected String startCommand;
-    protected String stopCommand;
-    protected String statusCommand;
+    protected String[] startCommand;
+    protected String[] stopCommand;
+    protected String[] statusCommand;
 
     public DefaultParticipant(CommandExecutor commandExecutor) {
         this.commandExecutor = commandExecutor;

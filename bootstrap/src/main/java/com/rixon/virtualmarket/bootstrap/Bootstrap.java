@@ -27,7 +27,8 @@ public class Bootstrap {
         String inputPropertiesFileName = args[1];
         MarketConfig marketConfig = JSON.parseObject(readInputFile(inputPropertiesFileName), MarketConfig.class);
         LOGGER.info("Got market configuration [{}]",marketConfig);
-        List<Participant> participants = determineParticipants(marketConfig,new CommandExecutor());
+        CommandExecutor commandExecutor = new CommandExecutor(new ProcessExecutionContext(marketConfig.getLogDirectory(),marketConfig.getLogName(),marketConfig.getErrorFileName()));
+        List<Participant> participants = determineParticipants(marketConfig, commandExecutor);
         participants.stream().forEach(Participant::startParticipant);
 
     }
