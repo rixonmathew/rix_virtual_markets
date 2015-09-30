@@ -10,8 +10,41 @@
         </layout>
     </appender>
 
+    <appender name="file" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="./broker.log"/>
+        <param name="MaxFileSize" value="1000KB"/>
+        <param name="MaxBackupIndex" value="1"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%5p (%d{DATE}) %-5p %c{1}:%L - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="errorFile" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="./broker.err.log"/>
+        <param name="Threshold" value="ERROR"/>
+        <param name="MaxFileSize" value="1000KB"/>
+        <param name="MaxBackupIndex" value="1"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%5p (%d{DATE}) %-5p %c{1}:%L - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="async" class="org.apache.log4j.AsyncAppender">
+        <param name="BufferSize" value="500"/>
+        <appender-ref ref="file"/>
+    </appender>
+
+    <appender name="asyncERROR" class="org.apache.log4j.AsyncAppender">
+        <param name="BufferSize" value="500"/>
+        <appender-ref ref="errorFile"/>
+    </appender>
+    <logger name="com.rixon.virtualmarket.*">
+        <level value="ERROR"/>
+        <appender-ref ref="errorFile"/>
+    </logger>
     <root>
         <level value="INFO"/>
+        <appender-ref ref="async"/>
         <appender-ref ref="console"/>
     </root>
 </log4j:configuration>

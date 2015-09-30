@@ -24,7 +24,7 @@ import static org.junit.Assert.assertNotNull;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = BrokerApplication.class)
 @WebAppConfiguration
-@IntegrationTest({"server.port:8877","broker.log.name:broker1"})
+@IntegrationTest("server.port:8877")
 public class BrokerApplicationTest {
 
     @Autowired
@@ -36,6 +36,8 @@ public class BrokerApplicationTest {
     @Test
     public void testGetOperation(){
         LOGGER.info("Testing Get operations from testGetOperation");
+        LOGGER.error("Testing error message");
+        LOGGER.warn("Testing warn message");
         assertNotNull(orderController);
         RestTemplate rest = new TestRestTemplate();
         String url = "http://localhost:"+port+"/rix_broker";
@@ -47,6 +49,8 @@ public class BrokerApplicationTest {
     @Test
     public void testPostOperation() {
         LOGGER.info("Testing post operations from testPostOperation");
+        LOGGER.error("Testing error message");
+        LOGGER.warn("Testing warn message");
         RestTemplate placeOrderTemplate = new TestRestTemplate();
         String url = "http://localhost:"+port+"/rix_broker/order";
         ResponseEntity<OrderResponse> orderResponseResponseEntity = placeOrderTemplate.postForEntity(url, new Order(), OrderResponse.class);

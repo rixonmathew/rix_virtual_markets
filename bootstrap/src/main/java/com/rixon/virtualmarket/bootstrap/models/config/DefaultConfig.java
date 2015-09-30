@@ -11,6 +11,9 @@ public class DefaultConfig {
     protected String pidFileName;
     protected String jarName;
     protected String jarLocation;
+    protected String logFileLocation;
+    protected String logFileName;
+    protected String errorFileName;
 
     public String getName() {
         return name;
@@ -92,6 +95,30 @@ public class DefaultConfig {
         this.jarLocation = jarLocation;
     }
 
+    public String getLogFileLocation() {
+        return logFileLocation;
+    }
+
+    public void setLogFileLocation(String logFileLocation) {
+        this.logFileLocation = logFileLocation;
+    }
+
+    public String getLogFileName() {
+        return logFileName;
+    }
+
+    public void setLogFileName(String logFileName) {
+        this.logFileName = logFileName;
+    }
+
+    public String getErrorFileName() {
+        return errorFileName;
+    }
+
+    public void setErrorFileName(String errorFileName) {
+        this.errorFileName = errorFileName;
+    }
+
     @Override
     public String toString() {
         return "DefaultConfig{" +
@@ -105,6 +132,9 @@ public class DefaultConfig {
                 ", pidFileName='" + pidFileName + '\'' +
                 ", jarName='" + jarName + '\'' +
                 ", jarLocation='" + jarLocation + '\'' +
+                ", logFileLocation='" + logFileLocation + '\'' +
+                ", logFileName='" + logFileName + '\'' +
+                ", errorFileName='" + errorFileName + '\'' +
                 '}';
     }
 }
