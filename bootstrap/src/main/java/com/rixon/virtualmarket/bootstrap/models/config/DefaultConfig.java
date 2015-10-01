@@ -14,6 +14,7 @@ public class DefaultConfig {
     protected String logFileLocation;
     protected String logFileName;
     protected String errorFileName;
+    protected String infoAppVersion;
 
     public String getName() {
         return name;
@@ -136,5 +137,13 @@ public class DefaultConfig {
                 ", logFileName='" + logFileName + '\'' +
                 ", errorFileName='" + errorFileName + '\'' +
                 '}';
+    }
+
+    public String getInfoAppVersion() {
+        return infoAppVersion;
+    }
+
+    public void setInfoAppVersion(String infoAppVersion) {
+        this.infoAppVersion = infoAppVersion;
     }
 }

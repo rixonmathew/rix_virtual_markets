@@ -1,8 +1,6 @@
 package com.rixon.virtualmarket.bootstrap.models.participant;
 
 import com.rixon.virtualmarket.bootstrap.CommandExecutor;
-import com.rixon.virtualmarket.bootstrap.models.participant.DefaultParticipant;
-import com.rixon.virtualmarket.bootstrap.models.participant.ParticipantType;
 import com.rixon.virtualmarket.bootstrap.models.config.BrokerConfig;
 
 import java.io.BufferedWriter;
@@ -15,7 +13,6 @@ import java.nio.file.Paths;
 public class BrokerParticipant extends DefaultParticipant{
 
     private BrokerConfig brokerConfig;
-
 
     public BrokerParticipant(CommandExecutor commandExecutor, BrokerConfig brokerConfig) {
         super(commandExecutor);
@@ -34,6 +31,7 @@ public class BrokerParticipant extends DefaultParticipant{
         startCommand[4] = "-Dbroker.name.err="+brokerConfig.getErrorFileName();
         startCommand[5] = "-jar";
         startCommand[6] = brokerConfig.getJarLocation()+"/"+brokerConfig.getJarName();
+
         /**
          commandExecutor.execute("java","-Dspring.config.location=/Users/rixonmathew/workspace/github/rix_virtual_markets/configuration/broker/broker1/rvm_broker1.properties"
          ,"-Dbroker.name.log=broker1","-Dbroker.log.location=/tmp/rvm_logs/broker"
@@ -49,10 +47,24 @@ public class BrokerParticipant extends DefaultParticipant{
         String fileName=null;
         try {
             Path propertyFile = null;
-            propertyFile = Files.createFile(Paths.get(brokerConfig.getJarLocation() + "/" + brokerConfig.getName() + ".properties"));
+            Path propertyDir = Paths.get(brokerConfig.getJarLocation());
+            if (!propertyDir.toFile().exists()) {
+                LOGGER.info("Directory [{}] not found. Creating it",propertyDir.toFile().getAbsolutePath());
+                Files.createDirectories(propertyDir);
+            }
+            propertyFile = Paths.get(brokerConfig.getJarLocation() + "/" + brokerConfig.getName() + ".properties");
+            if (propertyFile.toFile().exists()) {
+                LOGGER.info("Property file found [{}]. deleting it ",propertyFile.toFile().getAbsolutePath());
+                propertyFile.toFile().delete();
+            } else {
+                propertyFile = Files.createFile(propertyFile);
+            }
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(propertyFile.toFile()));
             bufferedWriter.write("broker.endpoint="+brokerConfig.getBrokerEndpoint());
+            bufferedWriter.newLine();
             bufferedWriter.write("broker.order.endpoint="+brokerConfig.getBrokerOrderEndpoint());
+            bufferedWriter.newLine();
+            writeDefaultProperties(bufferedWriter,brokerConfig);
             bufferedWriter.close();
             fileName = propertyFile.toFile().getAbsolutePath();
         } catch (IOException e) {
@@ -69,5 +81,13 @@ public class BrokerParticipant extends DefaultParticipant{
     @Override
     public ParticipantType getType() {
         return ParticipantType.BROKER;
+    }
+
+    @Override
+    public String toString() {
+        return "BrokerParticipant{" +
+                super.toString()+" "+
+                "brokerConfig=" + brokerConfig +
+                '}';
     }
 }
