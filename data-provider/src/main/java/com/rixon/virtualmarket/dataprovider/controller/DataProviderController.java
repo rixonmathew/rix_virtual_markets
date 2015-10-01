@@ -1,6 +1,8 @@
 package com.rixon.virtualmarket.dataprovider.controller;
 
+import com.rixon.virtualmarket.dataprovider.provider.FinancialInstrumentProvider;
 import com.rixon.virtualmarket.dataprovider.provider.OrderProvider;
+import com.rixon.virtualmarket.instrument.FinancialInstrument;
 import com.rixon.virtualmarket.order.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -17,6 +19,8 @@ public class DataProviderController {
 
     @Autowired
     private OrderProvider orderProvider;
+    @Autowired
+    private FinancialInstrumentProvider financialInstrumentProvider;
 
     @RequestMapping(
             value = "${dataprovider.order}",
@@ -25,5 +29,14 @@ public class DataProviderController {
     )
     public @ResponseBody Order getRandomOrder() {
         return orderProvider.getRandomOrder();
+    }
+
+    @RequestMapping(
+            value = "${dataprovider.instrument}",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public @ResponseBody FinancialInstrument getRandomInstrument() {
+        return financialInstrumentProvider.getRandomInstrument();
     }
 }

@@ -22,8 +22,8 @@ public class FinancialInstrumentProvider {
     private final static long MAX_INSTRUMENTS_IN_CACHE=100;
     private static final double TICK_SIZE = 0.01;
     private static final int MAX_ID_LIMIT = 1_000_000;
+    private static InstrumentTypeProvider instrumentTypeProvider = new InstrumentTypeProvider();
     private static Map<String,FinancialInstrument> financialInstrumentCache ;
-    private static Map<String,InstrumentType> instrumentTypeCache;
     private static List<InstrumentType> instrumentTypeList;
 
     public FinancialInstrument getRandomInstrument() {
@@ -40,7 +40,6 @@ public class FinancialInstrumentProvider {
 
 
     private static void loadCache() {
-        loadInstrumentTypeCache();
         financialInstrumentCache = new HashMap<>();
         LongStream.range(0,MAX_INSTRUMENTS_IN_CACHE).forEach(counter->{
             FinancialInstrument financialInstrument = createFinancialInstrument(counter);
@@ -49,13 +48,6 @@ public class FinancialInstrumentProvider {
 
     }
 
-    private static void loadInstrumentTypeCache() {
-        List<String> instrumentTypes= Arrays.asList("Common Stocks","Preferred Stocks","Government Bonds","Corporate Bonds","Stock Derivatives","Bond Derivatives");
-        instrumentTypeCache = new HashMap<>();
-        instrumentTypes.stream().forEach(s->instrumentTypeCache.put(s,new InstrumentType(s,s)));
-        instrumentTypeList = new ArrayList<>();
-        instrumentTypeList.addAll(instrumentTypeCache.values());
-    }
 
     private static FinancialInstrument createFinancialInstrument(long counter) {
         FinancialInstrument financialInstrument = new FinancialInstrument();
@@ -89,6 +81,10 @@ public class FinancialInstrumentProvider {
     }
 
     private static InstrumentType getRandomInstrumentType() {
+        if (instrumentTypeList==null) {
+            instrumentTypeList = new ArrayList<>();
+            instrumentTypeList.addAll(instrumentTypeProvider.getAllInstrumentTypes());
+        }
         Random random = new Random();
         return instrumentTypeList.get(random.nextInt(instrumentTypeList.size()));
     }

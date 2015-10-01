@@ -28,7 +28,7 @@ public class TestDataProviderApp {
     @Test
     public void testGetRandomOrder() {
         RestTemplate randomOrder = new TestRestTemplate();
-        String orderURL = "http://localhost:"+port+"/rix_dataprovider/order";
+        String orderURL = "http://localhost:"+port+"/rvm_dataprovider/order";
         final ResponseEntity<Order> orderResponseEntity = randomOrder.getForEntity(orderURL,Order.class);
         assertNotNull(orderResponseEntity);
         assertEquals("Http status code is not as expected", HttpStatus.OK,orderResponseEntity.getStatusCode());
