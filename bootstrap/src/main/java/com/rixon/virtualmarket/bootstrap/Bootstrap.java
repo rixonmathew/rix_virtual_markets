@@ -75,7 +75,6 @@ public class Bootstrap {
         }
     }
 
-
     private static void createExchangeParticipants(MarketConfig marketConfig, CommandExecutor commandExecutor, List<Participant> participants) {
         if (marketConfig.getExchangeConfigs()!=null && !marketConfig.getExchangeConfigs().isEmpty()){
             marketConfig.getExchangeConfigs().stream()

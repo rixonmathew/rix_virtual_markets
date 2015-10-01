@@ -23,7 +23,7 @@ public class BrokerParticipant extends DefaultParticipant{
 
     @Override
     protected void prepareCommands() {
-        startCommand = new String[10];
+        startCommand = new String[7];
         startCommand[0] = "java";
         startCommand[1] = "-Dspring.config.location="+getConfigFileLocation();
         startCommand[2] = "-Dbroker.log.location="+brokerConfig.getLogFileLocation();

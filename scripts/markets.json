@@ -4,7 +4,7 @@
   "logLevel":"info",
   "logDirectory":"/tmp/rvm_logs",
   "logName":"rvm_processes.log",
-  "errorFileName":"rvm_processes.log.err",
+  "errorFileName":"rvm_processes.err.log",
   "brokerConfigs":[
     {
       "name":"rvm_broker1",
@@ -16,7 +16,7 @@
       "infoAppName":"Broker 1",
       "infoAppDescription":"Broker 1",
       "infoAppVersion":"1.0.0",
-      "pidLocation":"/tmp/pids",
+      "pidLocation":"/tmp/rvm/pids",
       "pidFileName":"rvm_broker1",
       "jarLocation":"/tmp/rvm/brokers",
       "jarName":"broker.jar",
@@ -34,15 +34,13 @@
       "infoAppName":"Broker 2",
       "infoAppDescription":"Broker 2",
       "infoAppVersion":"1.0.0",
-      "pidLocation":"/tmp/pids",
+      "pidLocation":"/tmp/rvm/pids",
       "pidFileName":"rvm_broker2",
       "jarLocation":"/tmp/rvm/brokers",
       "jarName":"broker.jar",
       "logFileLocation":"/tmp/rvm_logs/brokers",
       "logFileName":"rvm_broker2",
       "errorFileName":"rvm_broker2.err"
-
     }
-
   ]
 }
