@@ -22,27 +22,21 @@ public class CommandExecutor {
     public void execute(String ... commandAndArgs) {
         ProcessBuilder pb =
                 new ProcessBuilder(commandAndArgs);
-        Map<String, String> env = pb.environment();
-////        env.put("VAR1", "myValue");
-////        env.remove("OTHERVAR");
-////        env.put("VAR2", env.get("VAR1") + "suffix");
         File directory = new File(processExecutionContext.getLogDir());
         if (!directory.exists())
             directory.mkdir();
         pb.directory(directory);
-        File log = new File(processExecutionContext.getLogFileName());
-        File error = new File(processExecutionContext.getErrorFileName());
+        File log = new File(directory.getPath()+"/"+processExecutionContext.getLogFileName());
+        File error = new File(directory.getPath()+"/"+processExecutionContext.getErrorFileName());
         pb.redirectErrorStream(true);
         pb.redirectOutput(ProcessBuilder.Redirect.appendTo(log));
         pb.redirectError(ProcessBuilder.Redirect.appendTo(error));
-        Process p = null;
+        Process p;
         try {
             p = pb.start();
             LOGGER.info("Process started [{}] ",p);
-//            assert pb.redirectInput() == ProcessBuilder.Redirect.PIPE;
-//            assert pb.redirectOutput().file() == log;
-//            assert p.getInputStream().read() == -1;
         } catch (IOException e) {
+            //TODO Better exception handling
             e.printStackTrace();
         }
     }
