@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.lang.reflect.Member;
-
 @RestController
 @RequestMapping("${dataprovider.endpoint}")
 public class DataProviderController {

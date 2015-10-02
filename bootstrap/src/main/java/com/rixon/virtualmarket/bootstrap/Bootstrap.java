@@ -1,17 +1,5 @@
 package com.rixon.virtualmarket.bootstrap;
 
-import com.alibaba.fastjson.JSON;
-import com.rixon.virtualmarket.bootstrap.models.participant.*;
-import com.rixon.virtualmarket.bootstrap.models.config.MarketConfig;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 public class Bootstrap {
     public static void main(String[] args) throws Exception{
         if(args.length!=2) {

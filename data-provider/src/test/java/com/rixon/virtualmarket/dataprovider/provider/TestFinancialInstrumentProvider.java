@@ -1,12 +1,9 @@
 package com.rixon.virtualmarket.dataprovider.provider;
 
-import com.rixon.virtualmarket.instrument.FinancialInstrument;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.stream.Stream;
-
-import static org.junit.Assert.assertNotNull;
 
 public class TestFinancialInstrumentProvider {
 

@@ -1,8 +1,6 @@
 package com.rixon.virtualmarket.bootstrap.models.participant;
 
 import com.rixon.virtualmarket.bootstrap.CommandExecutor;
-import com.rixon.virtualmarket.bootstrap.models.participant.DefaultParticipant;
-import com.rixon.virtualmarket.bootstrap.models.participant.ParticipantType;
 import com.rixon.virtualmarket.bootstrap.models.config.InstitutionConfig;
 
 public class InstitutionParticipant extends DefaultParticipant {

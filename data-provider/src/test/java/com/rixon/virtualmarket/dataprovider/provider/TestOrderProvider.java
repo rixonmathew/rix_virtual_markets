@@ -1,6 +1,5 @@
 package com.rixon.virtualmarket.dataprovider.provider;
 
-import com.rixon.virtualmarket.order.Order;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,6 +1,5 @@
 package com.rixon.virtualmarket.bootstrap;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -8,8 +7,6 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.core.io.ClassPathResource;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
