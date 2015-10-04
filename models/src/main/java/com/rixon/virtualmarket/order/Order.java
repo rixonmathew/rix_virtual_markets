@@ -10,6 +10,7 @@ public class Order implements Serializable{
 
     private static final long serialVersionUID = 42L;
 
+    private String id;
     private FinancialInstrument financialInstrument;
     private BigDecimal quantity;
     private BigDecimal price;
@@ -17,6 +18,14 @@ public class Order implements Serializable{
     private LocalDateTime dateTime;
 
     public Order() {
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public FinancialInstrument getFinancialInstrument() {
@@ -62,7 +71,8 @@ public class Order implements Serializable{
     @Override
     public String toString() {
         return "Order{" +
-                "financialInstrument=" + financialInstrument +
+                "id='" + id + '\'' +
+                ", financialInstrument=" + financialInstrument +
                 ", quantity=" + quantity +
                 ", price=" + price +
                 ", orderType=" + orderType +

@@ -11,7 +11,7 @@
     </appender>
 
     <appender name="file" class="org.apache.log4j.RollingFileAppender">
-        <param name="File" value="${broker.log.location}/${broker.name.log}.log"/>
+        <param name="File" value="${institution.log.location}/${institution.name.log}.log"/>
         <param name="MaxFileSize" value="1000KB"/>
         <param name="MaxBackupIndex" value="1"/>
         <layout class="org.apache.log4j.PatternLayout">
@@ -20,7 +20,7 @@
     </appender>
 
     <appender name="errorFile" class="org.apache.log4j.RollingFileAppender">
-        <param name="File" value="${broker.log.location}/${broker.name.err}.log"/>
+        <param name="File" value="${institution.log.location}/${institution.name.err}.log"/>
         <param name="Threshold" value="ERROR"/>
         <param name="MaxFileSize" value="1000KB"/>
         <param name="MaxBackupIndex" value="1"/>

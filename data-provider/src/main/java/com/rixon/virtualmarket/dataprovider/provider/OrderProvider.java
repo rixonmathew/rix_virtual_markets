@@ -1,6 +1,8 @@
 package com.rixon.virtualmarket.dataprovider.provider;
 
+import com.rixon.virtualmarket.instrument.FinancialInstrument;
 import com.rixon.virtualmarket.order.Order;
+import com.rixon.virtualmarket.order.OrderType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -29,6 +31,13 @@ public class OrderProvider {
         order.setOrderType(orderTypeProvider.getRandomOrderType());
         order.setPrice(orderPriceProvider.getPrice());
         order.setQuantity(orderQuantityProvider.getQuantity());
+        return order;
+    }
+
+    public Order getOrder(FinancialInstrument financialInstrument,OrderType orderType) {
+        Order order = getRandomOrder();
+        order.setFinancialInstrument(financialInstrument);
+        order.setOrderType(orderType);
         return order;
     }
 }
