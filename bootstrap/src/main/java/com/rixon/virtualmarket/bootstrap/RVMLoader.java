@@ -18,6 +18,7 @@ public class RVMLoader {
     private List<Participant> participants;
     private CommandExecutor commandExecutor;
     private MarketConfig marketConfig;
+    private PositionSeeder positionSeeder;
 
     public void start(String inputPropertiesFileName) throws IOException {
         LOGGER.info("Starting Virtual markets");
@@ -26,6 +27,7 @@ public class RVMLoader {
         if (commandExecutor==null)
             commandExecutor = new CommandExecutor(new ProcessExecutionContext(marketConfig.getLogDirectory(), marketConfig.getLogName(), marketConfig.getErrorFileName()));
         determineParticipants();
+        seedPositions();
         participants.stream().forEach(Participant::startParticipant);
     }
 
@@ -105,6 +107,12 @@ public class RVMLoader {
         }
     }
 
+    private void seedPositions() {
+        positionSeeder.seedPositions(participants);
+
+    }
+
+
     public List<Participant> getParticipants() {
         return participants;
     }
@@ -119,5 +127,13 @@ public class RVMLoader {
 
     public MarketConfig getMarketConfig() {
         return marketConfig;
+    }
+
+    public PositionSeeder getPositionSeeder() {
+        return positionSeeder;
+    }
+
+    public void setPositionSeeder(PositionSeeder positionSeeder) {
+        this.positionSeeder = positionSeeder;
     }
 }

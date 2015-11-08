@@ -19,6 +19,7 @@ public class FinancialInstrument implements Serializable{
     private BigDecimal tickSize;
     private InstrumentQuote issuingQuote;
     private String issuingCurrency;
+    private String primaryIndetifierType;
 
     public String getName() {
         return name;
@@ -90,6 +91,18 @@ public class FinancialInstrument implements Serializable{
 
     public String getIssuingCurrency() {
         return issuingCurrency;
+    }
+
+    public InstrumentIdentifier getPrimaryIdentifier() {
+        return identifiers.get(primaryIndetifierType);
+    }
+
+    public String getPrimaryIndetifierType() {
+        return primaryIndetifierType;
+    }
+
+    public void setPrimaryIndetifierType(String primaryIndetifierType) {
+        this.primaryIndetifierType = primaryIndetifierType;
     }
 
     @Override

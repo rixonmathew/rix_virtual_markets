@@ -35,7 +35,7 @@ public class TestCommandExecutor {
     @Test
     public void testCamelCaseSplit() {
         String word = "serverPortAndWordBBCGot";
-        String propertyName = Stream.of(word.split("(?<!(^|[A-Z]))(?=[A-Z])|(?<!^)(?=[A-Z][a-z])")).map(s->s.toLowerCase()).collect(joining("."));
+        String propertyName = Stream.of(word.split("(?<!(^|[A-Z]))(?=[A-Z])|(?<!^)(?=[A-Z][a-z])")).map(String::toLowerCase).collect(joining("."));
         System.out.println("propertyName = " + propertyName);
     }
 }
