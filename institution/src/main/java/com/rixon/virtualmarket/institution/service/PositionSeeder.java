@@ -18,7 +18,7 @@ public class PositionSeeder {
     @Autowired
     private PositionProvider positionProvider;
 
-    @Value("${broker.seed.positions}")
+    @Value("${broker.seed.positions:false}")
     private boolean seedPositions;
 
     private final static Logger LOGGER = LoggerFactory.getLogger(PositionSeeder.class);

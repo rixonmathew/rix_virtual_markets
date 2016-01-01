@@ -1,6 +1,6 @@
 package com.rixon.virtualmarket.bootstrap;
 
-public class Bootstrap {
+public class Director {
     public static void main(String[] args) throws Exception{
         if(args.length!=2) {
             System.err.println("Usage java -jar rvm_bootstrap.jar --file <properties.file>");

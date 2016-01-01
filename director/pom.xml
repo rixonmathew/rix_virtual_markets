@@ -65,7 +65,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
                 <configuration>
-                    <mainClass>com.rixon.virtualmarket.bootstrap.Bootstrap</mainClass>
+                    <mainClass>com.rixon.virtualmarket.bootstrap.Director</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>
