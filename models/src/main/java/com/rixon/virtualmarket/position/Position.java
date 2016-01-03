@@ -1,5 +1,6 @@
 package com.rixon.virtualmarket.position;
 
+import com.rixon.virtualmarket.account.Account;
 import com.rixon.virtualmarket.instrument.FinancialInstrument;
 
 import java.math.BigDecimal;

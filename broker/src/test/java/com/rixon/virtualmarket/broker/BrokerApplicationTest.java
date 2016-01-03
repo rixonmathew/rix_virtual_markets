@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.IntegrationTest;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.boot.test.TestRestTemplate;
+import org.springframework.boot.test.WebIntegrationTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -23,8 +24,7 @@ import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = BrokerApplication.class)
-@WebAppConfiguration
-@IntegrationTest("server.port:8877")
+@WebIntegrationTest({"server.port:0", "eureka.client.enabled:false"})
 public class BrokerApplicationTest {
 
     @Autowired
@@ -40,7 +40,7 @@ public class BrokerApplicationTest {
         LOGGER.warn("Testing warn message");
         assertNotNull(orderController);
         RestTemplate rest = new TestRestTemplate();
-        String url = "http://localhost:"+port+"/rix_broker";
+        String url = "http://localhost:"+port+"/rvm_broker";
         ResponseEntity<String> responseEntity = rest.getForEntity(url, String.class);
         assertEquals("HTTP Response status is not as expected", HttpStatus.OK,responseEntity.getStatusCode());
         assertEquals("Body is not as expected", "I am a prime broker", responseEntity.getBody());
@@ -52,7 +52,7 @@ public class BrokerApplicationTest {
         LOGGER.error("Testing error message");
         LOGGER.warn("Testing warn message");
         RestTemplate placeOrderTemplate = new TestRestTemplate();
-        String url = "http://localhost:"+port+"/rix_broker/order";
+        String url = "http://localhost:"+port+"/rvm_broker/order";
         ResponseEntity<OrderResponse> orderResponseResponseEntity = placeOrderTemplate.postForEntity(url, new Order(), OrderResponse.class);
         assertEquals("HTTP Response status is not as expected", HttpStatus.OK,orderResponseResponseEntity.getStatusCode());
     }

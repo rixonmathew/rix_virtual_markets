@@ -12,6 +12,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDateTime;
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.LongStream;
 
 import static java.util.stream.Collectors.toMap;
@@ -19,88 +20,93 @@ import static java.util.stream.Collectors.toMap;
 @Component
 public class FinancialInstrumentProvider {
 
-    private final static long MAX_INSTRUMENTS_IN_CACHE=100;
-    private static final double TICK_SIZE = 0.01;
-    private static final int MAX_ID_LIMIT = 1_000_000;
-    private static InstrumentTypeProvider instrumentTypeProvider = new InstrumentTypeProvider();
-    private static Map<String,FinancialInstrument> financialInstrumentCache ;
-    private static List<InstrumentType> instrumentTypeList;
+  private final static long MAX_INSTRUMENTS_IN_CACHE = 100;
+  private static final double TICK_SIZE = 0.01;
+  private static final int MAX_ID_LIMIT = 1_000_000;
+  private static InstrumentTypeProvider instrumentTypeProvider = new InstrumentTypeProvider();
+  private static IdentifierTypeProvider identifierTypeProvider = new IdentifierTypeProvider();
+  private static Map<String, FinancialInstrument> financialInstrumentCache;
+  private static List<InstrumentType> instrumentTypeList;
 
-    public FinancialInstrument getRandomInstrument() {
-        if (financialInstrumentCache==null){
-            loadCache();
-        }
-        return financialInstrumentCache.values().stream().parallel().unordered().filter(FinancialInstrumentProvider::rollDice).findFirst().get();
+  public FinancialInstrument getRandomInstrument() {
+    if (financialInstrumentCache == null) {
+      loadCache();
     }
+    return financialInstrumentCache.values().stream().parallel().unordered().filter(FinancialInstrumentProvider::rollDice).findFirst().get();
+  }
 
-    private static boolean rollDice(FinancialInstrument financialInstrument) {
-        Random random = new Random();
-        return random.nextInt(3)==1;
+  private static boolean rollDice(FinancialInstrument financialInstrument) {
+    Random random = new Random();
+    return random.nextInt(3) == 1;
+  }
+
+
+  private static void loadCache() {
+    financialInstrumentCache = new HashMap<>();
+    LongStream.range(0, MAX_INSTRUMENTS_IN_CACHE).forEach(counter -> {
+      FinancialInstrument financialInstrument = createFinancialInstrument(counter);
+      financialInstrumentCache.put(financialInstrument.getIdentifier("ISIN").getValue(), financialInstrument);
+    });
+
+  }
+
+
+  private static FinancialInstrument createFinancialInstrument(long counter) {
+    FinancialInstrument financialInstrument = new FinancialInstrument();
+    Random random = new Random();
+    int randomId = (int) (random.nextInt(MAX_ID_LIMIT) + counter);
+    financialInstrument.setDescription("Description for" + randomId);
+    financialInstrument.setName("Name for " + randomId);
+    financialInstrument.setIdentifiers(createRandomIdentifier(randomId));
+    financialInstrument.setPrimaryIndetifierType(identifierTypeProvider.getRandomIdentifierType());
+    financialInstrument.setInstrumentMetrics(createRandomMetrics());
+    financialInstrument.setInstrumentType(getRandomInstrumentType());
+    financialInstrument.setTickSize(new BigDecimal(String.valueOf(TICK_SIZE)));
+    financialInstrument.setIssuingCurrency("USD");
+    financialInstrument.setIssuingQuote(getRandomQuote(financialInstrument));
+    financialInstrument.setInstrumentQuote(getRandomQuote(financialInstrument));
+    return financialInstrument;
+  }
+
+  private static Map<String, InstrumentIdentifier> createRandomIdentifier(int randomId) {
+    List<String> identifierTypes = identifierTypeProvider.getAllIdentifierTypes();
+    return identifierTypes.stream()
+        .map(id -> new InstrumentIdentifier(id, id, id + ":" + randomId))
+        .collect(toMap(InstrumentIdentifier::getType, instrumentTypeIdentifier -> instrumentTypeIdentifier));
+  }
+
+  private static InstrumentMetrics createRandomMetrics() {
+    Map<String, String> metrics = new HashMap<>();
+    metrics.put("key 1", "value 1");
+    metrics.put("key 2", "value 3");
+    metrics.put("key 3", "value 3");
+    return new InstrumentMetrics(metrics);
+  }
+
+  private static InstrumentType getRandomInstrumentType() {
+    if (instrumentTypeList == null) {
+      instrumentTypeList = new ArrayList<>();
+      instrumentTypeList.addAll(instrumentTypeProvider.getAllInstrumentTypes());
     }
+    Random random = new Random();
+    return instrumentTypeList.get(random.nextInt(instrumentTypeList.size()));
+  }
 
+  private static InstrumentQuote getRandomQuote(FinancialInstrument financialInstrument) {
+    InstrumentQuoteBuilder instrumentQuoteBuilder = new InstrumentQuoteBuilder();
+    Random random = new Random(200);
+    instrumentQuoteBuilder.setTickSize(financialInstrument.getTickSize());
+    BigDecimal bid = BigDecimal.valueOf(random.nextInt()).setScale(2, RoundingMode.HALF_DOWN);
+    instrumentQuoteBuilder.setBid(bid);
+    instrumentQuoteBuilder.setAsk(bid.add(financialInstrument.getTickSize().multiply(BigDecimal.valueOf(5))));
+    instrumentQuoteBuilder.setBidQuantity(BigDecimal.TEN);
+    instrumentQuoteBuilder.setAskQuantity(BigDecimal.TEN);
+    instrumentQuoteBuilder.setCurrency(financialInstrument.getIssuingCurrency());
+    instrumentQuoteBuilder.setTimeStamp(LocalDateTime.now());
+    return instrumentQuoteBuilder.createInstrumentQuote();
+  }
 
-    private static void loadCache() {
-        financialInstrumentCache = new HashMap<>();
-        LongStream.range(0,MAX_INSTRUMENTS_IN_CACHE).forEach(counter->{
-            FinancialInstrument financialInstrument = createFinancialInstrument(counter);
-            financialInstrumentCache.put(financialInstrument.getIdentifier("ISIN").getValue(),financialInstrument);
-        });
-
-    }
-
-
-    private static FinancialInstrument createFinancialInstrument(long counter) {
-        FinancialInstrument financialInstrument = new FinancialInstrument();
-        Random random = new Random();
-        int randomId = (int) (random.nextInt(MAX_ID_LIMIT)+counter);
-        financialInstrument.setDescription("Description for"+randomId);
-        financialInstrument.setName("Name for "+randomId);
-        financialInstrument.setIdentifiers(createRandomIdentifier(randomId));
-        financialInstrument.setInstrumentMetrics(createRandomMetrics());
-        financialInstrument.setInstrumentType(getRandomInstrumentType());
-        financialInstrument.setTickSize(new BigDecimal(String.valueOf(TICK_SIZE)));
-        financialInstrument.setIssuingCurrency("USD");
-        financialInstrument.setIssuingQuote(getRandomQuote(financialInstrument));
-        financialInstrument.setInstrumentQuote(getRandomQuote(financialInstrument));
-        return financialInstrument;
-    }
-
-    private static Map<String, InstrumentIdentifier> createRandomIdentifier(int randomId) {
-        List<String> identifierTypes = Arrays.asList("CUSIP","ISIN","SEDOL","RIC","CUSTOM");
-        return identifierTypes.stream()
-                .map(id->new InstrumentIdentifier(id,id,id+":"+randomId))
-                .collect(toMap(InstrumentIdentifier::getType,instrumentTypeIdentifier->instrumentTypeIdentifier));
-    }
-
-    private static InstrumentMetrics createRandomMetrics() {
-        Map<String,String> metrics = new HashMap<>();
-        metrics.put("key 1","value 1");
-        metrics.put("key 2","value 3");
-        metrics.put("key 3","value 3");
-        return new InstrumentMetrics(metrics);
-    }
-
-    private static InstrumentType getRandomInstrumentType() {
-        if (instrumentTypeList==null) {
-            instrumentTypeList = new ArrayList<>();
-            instrumentTypeList.addAll(instrumentTypeProvider.getAllInstrumentTypes());
-        }
-        Random random = new Random();
-        return instrumentTypeList.get(random.nextInt(instrumentTypeList.size()));
-    }
-
-    private static InstrumentQuote getRandomQuote(FinancialInstrument financialInstrument) {
-        InstrumentQuoteBuilder instrumentQuoteBuilder = new InstrumentQuoteBuilder();
-        Random random = new Random(200);
-        instrumentQuoteBuilder.setTickSize(financialInstrument.getTickSize());
-        BigDecimal bid = BigDecimal.valueOf(random.nextInt()).setScale(2, RoundingMode.HALF_DOWN);
-        instrumentQuoteBuilder.setBid(bid);
-        instrumentQuoteBuilder.setAsk(bid.add(financialInstrument.getTickSize().multiply(BigDecimal.valueOf(5))));
-        instrumentQuoteBuilder.setBidQuantity(BigDecimal.TEN);
-        instrumentQuoteBuilder.setAskQuantity(BigDecimal.TEN);
-        instrumentQuoteBuilder.setCurrency(financialInstrument.getIssuingCurrency());
-        instrumentQuoteBuilder.setTimeStamp(LocalDateTime.now());
-        return instrumentQuoteBuilder.createInstrumentQuote();
-    }
-
+  public List<FinancialInstrument> getMultipleRandomInstruments(long count) {
+    return LongStream.range(0, count).mapToObj(l -> this.getRandomInstrument()).collect(Collectors.toList());
+  }
 }

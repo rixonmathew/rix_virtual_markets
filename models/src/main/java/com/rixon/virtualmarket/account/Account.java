@@ -1,4 +1,4 @@
-package com.rixon.virtualmarket.position;
+package com.rixon.virtualmarket.account;
 
 import java.math.BigDecimal;
 

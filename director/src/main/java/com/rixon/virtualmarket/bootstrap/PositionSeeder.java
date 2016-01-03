@@ -2,7 +2,7 @@ package com.rixon.virtualmarket.bootstrap;
 
 import com.rixon.virtualmarket.bootstrap.models.participant.Participant;
 import com.rixon.virtualmarket.instrument.FinancialInstrument;
-import com.rixon.virtualmarket.position.Account;
+import com.rixon.virtualmarket.account.Account;
 import com.rixon.virtualmarket.position.Position;
 
 import java.math.BigDecimal;

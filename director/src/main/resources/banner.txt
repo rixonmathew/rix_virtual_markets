@@ -1,5 +1,5 @@
 ===============================================
-RVM - Bootstrap application
+RVM - Director
 ===============================================
 App version - ${application.formatted-version}
 Spring Boot Version - ${spring-boot.formatted-version}
