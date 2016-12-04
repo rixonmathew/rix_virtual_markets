@@ -1,5 +1,9 @@
 package com.rixon.virtualmarket.order;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import com.rixon.virtualmarket.instrument.FinancialInstrument;
 
 import java.io.Serializable;
@@ -60,6 +64,8 @@ public class Order implements Serializable{
         this.orderType = orderType;
     }
 
+    @JsonSerialize(using = LocalDateTimeSerializer.class)
+    @JsonDeserialize(using = LocalDateTimeDeserializer.class)
     public LocalDateTime getDateTime() {
         return dateTime;
     }
