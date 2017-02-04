@@ -26,6 +26,5 @@ public class TestUIApplication {
         assertNotNull(uiResponse);
         assertEquals("Http status code is not as expected", HttpStatus.OK, uiResponse.getStatusCode());
         System.out.println("uiResponse = " + uiResponse.getBody());
-
     }
 }
