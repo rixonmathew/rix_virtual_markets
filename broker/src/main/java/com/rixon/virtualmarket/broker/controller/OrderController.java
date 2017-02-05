@@ -4,6 +4,7 @@ import com.rixon.virtualmarket.broker.models.OrderResponse;
 import com.rixon.virtualmarket.order.Order;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +15,11 @@ import java.time.LocalDateTime;
 public class OrderController {
 
   private final static Logger LOGGER = LoggerFactory.getLogger(OrderController.class);
+
+  @Value("${broker.secure.property1.password}")
+  private String secureProperty1;
+  @Value("${broker.secure.property2.password}")
+  private String secureProperty2;
 
   @RequestMapping
   public String home() {
