@@ -16,9 +16,9 @@ public class OrderController {
 
   private final static Logger LOGGER = LoggerFactory.getLogger(OrderController.class);
 
-  @Value("${broker.secure.property1.password}")
+  @Value("${broker.secure.property1.password:password123}")
   private String secureProperty1;
-  @Value("${broker.secure.property2.password}")
+  @Value("${broker.secure.property2.password:password123}")
   private String secureProperty2;
 
   @RequestMapping
