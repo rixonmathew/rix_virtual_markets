@@ -19,7 +19,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = BrokerApplication.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,properties = {"eureka.client.enabled:false","spring.cloud.config.enabled=false","secure_property_file=file:/tmp/secure/broker-service/properties.yml"})
+@SpringBootTest(classes = BrokerApplication.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,properties = {"eureka.client.enabled:false","spring.cloud.config.enabled=false","secure_property_file=classpath:/secure-properties.yml"})
 public class BrokerApplicationTest {
 
     @Autowired

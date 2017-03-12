@@ -1,0 +1,6 @@
+broker:
+  secure:
+    property1:
+      password: test123
+    property2:
+      password: test456
