@@ -119,11 +119,11 @@
             <version>${spring.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.rixon.ramodage</groupId>
-            <artifactId>ramodage</artifactId>
-            <version>${ramodage.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.rixon.ramodage</groupId>-->
+            <!--<artifactId>ramodage</artifactId>-->
+            <!--<version>${ramodage.version}</version>-->
+        <!--</dependency>-->
     </dependencies>
     <build>
         <finalName>exchange</finalName>
