@@ -7,11 +7,11 @@ import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@PropertySource("${secure_property_file}")
+//@PropertySource("${secure_property_file}")
 public class BrokerApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(BrokerApplication.class, args);
+    SpringApplication.run(BrokerApplication.class,args);
   }
 
 }
