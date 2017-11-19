@@ -4,3 +4,5 @@
 /broker.log
 /broker.err.log
 *.DS_Store
+dep.txt
+**/dep.txt
