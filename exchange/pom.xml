@@ -27,7 +27,7 @@
         <spring-data.version>1.3.4.RELEASE</spring-data.version>
         <fastjson.version>1.2.25</fastjson.version>
         <spring-rabbit.version>1.5.0.RELEASE</spring-rabbit.version>
-        <spring-amqp.version>1.5.0.RELEASE</spring-amqp.version>
+        <spring-amqp.version>1.7.11.RELEASE</spring-amqp.version>
         <ramodage.version>1.0</ramodage.version>
     </properties>
     <dependencies>
