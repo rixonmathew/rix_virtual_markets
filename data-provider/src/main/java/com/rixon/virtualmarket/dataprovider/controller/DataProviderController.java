@@ -5,12 +5,8 @@ import com.rixon.virtualmarket.dataprovider.provider.OrderProvider;
 import com.rixon.virtualmarket.instrument.FinancialInstrument;
 import com.rixon.virtualmarket.order.Order;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -51,7 +47,7 @@ public class DataProviderController {
       produces = MediaType.APPLICATION_JSON_VALUE
   )
   public @ResponseBody
-  List<FinancialInstrument> getRandomInstrument (@Param("count") long count) {
+  List<FinancialInstrument> getRandomInstrument (@RequestParam("count") long count) {
       return financialInstrumentProvider.getMultipleRandomInstruments(count);
   }
 }
