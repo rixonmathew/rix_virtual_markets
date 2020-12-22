@@ -5,7 +5,6 @@ import com.rixon.virtualmarket.order.Order;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
@@ -29,7 +28,7 @@ public class OrderController {
   @RequestMapping(path = "${broker.get.order:/order}",
       method = RequestMethod.GET,
       headers = {"Content-Type=application/json;charset=UTF-8"})
-  public @ResponseBody Order getOrder(@Param("orderId") String orderId) {
+  public @ResponseBody Order getOrder(@RequestParam("orderId") String orderId) {
     //TODO add OrderService that works with OrderRepository to return Order status
     return new Order();
   }
