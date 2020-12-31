@@ -10,7 +10,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>data-provider</artifactId>
   <properties>
-    <jackson-datatype.version>2.4.0</jackson-datatype.version>
+    <jackson-datatype.version>2.9.8</jackson-datatype.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.8.2</junit.version>
     <mockito.version>1.9.5</mockito.version>
