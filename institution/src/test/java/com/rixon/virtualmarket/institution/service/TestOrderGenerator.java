@@ -1,12 +1,12 @@
 package com.rixon.virtualmarket.institution.service;
 
+import com.rixon.virtualmarket.account.Account;
 import com.rixon.virtualmarket.dataprovider.provider.OrderProvider;
 import com.rixon.virtualmarket.dataprovider.provider.OrderTypeProvider;
 import com.rixon.virtualmarket.institution.models.InstitutionPositions;
 import com.rixon.virtualmarket.institution.models.Sentiment;
 import com.rixon.virtualmarket.instrument.FinancialInstrument;
 import com.rixon.virtualmarket.order.Order;
-import com.rixon.virtualmarket.account.Account;
 import com.rixon.virtualmarket.position.Position;
 import org.junit.Before;
 import org.junit.Test;

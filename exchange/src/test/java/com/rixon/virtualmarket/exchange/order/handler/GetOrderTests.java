@@ -12,6 +12,10 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.test.util.ReflectionTestUtils;
 
+import javax.swing.text.html.Option;
+
+import java.util.Optional;
+
 import static junit.framework.TestCase.assertNull;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -45,21 +49,21 @@ public class GetOrderTests {
     @Test
     public void testGetOrderForValidOrder() {
         String orderId="10101";
-        when(orderRepository.findOne(orderId)).thenReturn(mockOrderForId(orderId));
+        when(orderRepository.findById(orderId)).thenReturn(mockOrderForId(orderId));
         Order order = orderHandler.getOrderForId(orderId);
-        Order expectedOrder = mockOrderForId(orderId);
+        Order expectedOrder = mockOrderForId(orderId).get();
         assertThat("Order is not matching",order,is(expectedOrder));
     }
 
     @Test
     public void testGetOrderForInvalidOrder() {
         String orderId = "NA";
-        when(orderRepository.findOne(orderId)).thenReturn(null);
+        when(orderRepository.findById(orderId)).thenReturn(null);
         Order order = orderHandler.getOrderForId(orderId);
         assertNull(order);
     }
 
-    private Order mockOrderForId(String orderId) {
-        return JSON.parseObject(TestUtil.fileContentAsString("newSingleOrder.json"), Order.class);
+    private Optional<Order> mockOrderForId(String orderId) {
+        return Optional.of(JSON.parseObject(TestUtil.fileContentAsString("newSingleOrder.json"), Order.class));
     }
 }

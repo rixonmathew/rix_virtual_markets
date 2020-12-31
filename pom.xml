@@ -18,6 +18,7 @@
 
   <modules>
     <module>models</module>
+    <module>data-provider</module>
     <module>broker</module>
     <module>institution</module>
     <module>exchange</module>
@@ -26,7 +27,6 @@
     <module>clearinghouse</module>
     <module>regulator</module>
     <module>ui</module>
-    <module>data-provider</module>
     <module>director</module>
     <module>configuration-service</module>
     <module>eureka-service</module>

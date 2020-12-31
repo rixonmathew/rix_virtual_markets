@@ -16,6 +16,7 @@ public class InstitutionApplication {
 
     @Bean
     public InstitutionPositions institutionPositions() {
-        return new InstitutionPositions();
+        InstitutionPositions institutionPositions = new InstitutionPositions();
+        return institutionPositions;
     }
 }

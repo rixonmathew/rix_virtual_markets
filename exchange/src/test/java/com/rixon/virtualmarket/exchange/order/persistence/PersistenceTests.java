@@ -41,7 +41,7 @@ public class PersistenceTests {
 
     @Test
     public void testCreateOrder() {
-        Order savedOrder = orderRepository.findOne(mockOrder.getOrderID());
+        Order savedOrder = orderRepository.findById(mockOrder.getOrderID()).get();
         assertThat("Saved order is not as per mockOrder",savedOrder,is(mockOrder));
     }
 
