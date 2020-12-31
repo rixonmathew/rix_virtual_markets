@@ -12,8 +12,6 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.test.util.ReflectionTestUtils;
 
-import javax.swing.text.html.Option;
-
 import java.util.Optional;
 
 import static junit.framework.TestCase.assertNull;
