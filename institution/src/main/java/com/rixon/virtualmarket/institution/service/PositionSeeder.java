@@ -26,7 +26,7 @@ public class PositionSeeder {
     @PostConstruct
     public void createPositions() {
         if (seedPositions) {
-
+            positionProvider.createPositionsFor(null,1000);
         } else {
           LOGGER.warn("No positions being seeded for broker");
         }

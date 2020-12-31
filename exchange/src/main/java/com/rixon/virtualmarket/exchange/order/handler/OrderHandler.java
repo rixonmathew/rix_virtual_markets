@@ -50,14 +50,14 @@ public class OrderHandler {
     }
 
     public Order getOrderForId(String orderId) {
-        return orderRepository.findOne(orderId);
+        return orderRepository.findById(orderId).get();
     }
 
     public OrderResponse delete(String orderID) {
         OrderResponse orderResponse = new OrderResponse();
         orderResponse.setOrderID(orderID);
         if (orderID!=null) {
-            orderRepository.delete(orderID);
+            orderRepository.deleteById(orderID);
             orderResponse.setStatus("OK");
         } else {
             orderResponse.setStatus("NOK");
